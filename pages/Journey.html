@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KenmaTours&Safaris</title>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-9126eba6-8a56-4010-b823-c242e20abbbb" data-elfsight-app-lazy></div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "rxV6dsFJBq9sHgUE3",
+            });
+        })();
+    </script>
+    <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body class="contact-body">
+    <nav>
+        <div class="logo">
+            <h1><a href="../index.html" class="logo-heading">KenmaTours&Safaris</a></h1>
+        </div>
+        <ul class="sidebar">
+            <li class=""><a href="../index.html">Home</a></li>
+            <li class=""><a href="./About.html">About</a></li>
+            <li class=""><a href="./Safari.html">Safari</a></li>
+            <li class=""><a href="./Gallery.html">Gallery</a></li>
+            <li class=" "><a href="./Contact.html">Contact</a></li>
+            <li class=" active"><a href="./Journey.html">Book</a></li>
+            <i class='bx bxs-phone-call'>+256 773527834</i>
+            <button class="expert-btn"><a href="../pages/Journey.html">BOOK NOW</a></button>
+        </ul>
+        <div class="menu-icon1">
+            <img src="../images/dehaze.svg" class="menu-icon" alt="">
+        </div>
+    </nav>
+    <section class="journey" id="journey">
+        <div class="journey-box">
+            <h2 class="heading-journey"> Are ready to plan your journey? Let’s talk.Contact us to design your dream Ugandan adventure.</h2>
+        </div>
+        <form type="submit">
+            <div class="journeyinput-box">
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder=" Email address">
+            </div>
+            <div class="journeyinput-box">
+                <input type="tel" id="number" placeholder="Mobile number">
+                <input type="text" id="subject" placeholder=" Enter subject">
+            </div>
+            <div class="journeyinput-box">
+                <input type="text" id="country" placeholder="Enter Your country">
+                <input type="date" id="date" placeholder=" Email travel dates">
+            </div>
+            <div class="journeyinput-box">
+                <input type="number" id="people" placeholder="Enter number of  people">
+                <input type="number" id="days" placeholder=" Enter number of days">
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Describe your kind of Journey"></textarea>
+            <input type="submit" onclick=sendMail() value="send message " class="journey-btn">
+            </div>
+        </form>
+    </section>
+    <footer class="footer journey-footer">
+        <div class="footer-box ">
+            <a href="../pages/about.html">
+                <h1>About</h1>
+            </a>
+        </div>
+        <div class="footer-box ">
+            <h3>Our socials</h3>
+            <i class='bx bxl-facebook-square'> KenmaTours</i>
+            <i class='bx bxl-instagram'> KenmaTours</i>
+            <i class='bx bxl-tiktok'> KenmaTours</i>
+        </div>
+        <div class="footer-box ">
+            <h3>Contact</h3>
+            <span>Email:Kenmatours@gmail.com</span>
+            <span>Mobile No:+256 773527834</span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>
