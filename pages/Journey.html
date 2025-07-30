@@ -45,7 +45,7 @@
     </nav>
     <section class="journey" id="journey">
         <div class="journey-box">
-            <h2 class="heading-journey"> Are ready to plan your journey? Let’s talk.Contact us to design your dream Ugandan adventure.</h2>
+            <h1 class="heading-journey"> Are ready to plan your journey?.Fill in the form below to get started.</h1>
         </div>
         <form type="submit">
             <div class="journeyinput-box">
@@ -57,17 +57,68 @@
                 <input type="text" id="subject" placeholder=" Enter Your budget">
             </div>
             <div class="journeyinput-box">
-                <input type="text" id="country" placeholder="Enter Your country">
+                <input type="text" id="country" placeholder="Country of Origin ">
                 <input type="date" id="date" placeholder=" Email travel dates">
             </div>
             <div class="journeyinput-box">
-                <input type="number" id="people" placeholder="Enter number of  people">
+                <input type="number" id="people" placeholder="Enter number of  Travelers">
                 <input type="number" id="days" placeholder=" Enter number of days">
+            </div>
+            <div class="wrapper">
+                <h3>Choose from Our Safaris</h3>
+                <div class="group">
+                    <input type="checkbox" id="river" name="check">
+                    <label for="river">Rivernile</label></br>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="falls" name="check">
+                    <label for="river">Busowoko falls</label></br>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="river" name="check">
+                    <label for="river">Lake Bunyonyi</label></br>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="river" name="check">
+                    <label for="river">cultural immersion</label></br>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="river" name="check">
+                    <label for="river">National Parks</label></br>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="river" name="check">
+                    <label for="river">Kingdoms</label></br>
+                </div>
+                <div class="group">
+                    <input type="checkbox" id="river" name="check">
+                    <label for="river">Gorilla treking</label></br>
+                </div>
+            </div>
+            <div class="select-wrapper">
+                <div class="select-box">
+                    <h1>Select Your Budget Range</h1>
+                    <select name="select-btn" id="select">
+                            <option value="100">$1,000-$3,000</option>
+                             <option value="100">$3,000-$5,000</option>
+                             <option value="100">$5,000-$10,000</option>
+                        </select>
+                </div>
+                <div class="select-box">
+                    <h1>Accomodation</h1>
+                    <select name="select-btn" id="select">
+                            <option value="100">Budget</option>
+                             <option value="100">Midrange</option>
+                             <option value="100">Highend</option>
+                        </select>
+                </div>
+
             </div>
             <textarea id="message" cols="30" rows="10" placeholder="Describe your kind of Journey"></textarea>
             <input type="submit" onclick=sendMail() value="send message " class="journey-btn">
             </div>
         </form>
+
     </section>
     <footer class="footer journey-footer">
         <div class="footer-box ">

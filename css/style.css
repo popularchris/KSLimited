@@ -30,16 +30,39 @@
         font-size: 62.8%;
         overflow-x: hidden;
     }
-    
-    li {
+    /* li {
         list-style: none;
-    }
+    } */
     
     nav ul,
     li {
         transition: .3s ease;
         text-decoration: none;
         align-items: center;
+    }
+    
+    .sidebar li {
+        list-style: none;
+    }
+    
+    .para-heading {
+        list-style: none;
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    .park-content {
+        color: #F1E2B7;
+        font-size: 20px;
+    }
+    
+    .lake-content {
+        font-size: 23px;
+        color: #F1E2B7;
+    }
+    
+    .strong {
+        color: yellow;
     }
     
     nav {
@@ -745,6 +768,7 @@
     }
     
     .heading-journey {
+        text-align: center;
         font-size: 20px;
     }
     
@@ -810,7 +834,7 @@
     }
     
     .nile {
-        background-image: url(../images/rivernile.jpg);
+        background-image: url(../images/water-adventure.jpg);
         position: relative;
         background-position: center;
         background-size: cover;
@@ -882,7 +906,7 @@
     }
     
     .culture {
-        background-image: url(../images/dance.jpeg);
+        background-image: url(../images/cultural.png);
         background-size: cover;
         position: relative;
     }
@@ -931,13 +955,13 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        font-size: 40px;
+        font-size: 60px;
         color: yellow;
     }
     
-    .park-para {
-        color: #F1E2B7;
-        font-size: 25px;
+    .listings {
+        margin-left: 50px;
+        margin-top: 10px;
     }
     
     .treking {
@@ -958,6 +982,42 @@
     .treking-para {
         color: #F1E2B7;
         font-size: 25px;
+    }
+    
+    .wrapper {
+        margin: 40px 0px;
+        font-size: 20px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .select-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #select {
+        width: 200px;
+        background-color: #2E6613;
+        color: var(--bg-color);
+        padding: 10px;
+        font-size: 20px;
+    }
+    
+    .select-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 20px 0px;
+    }
+    
+    .select-box h1 {
+        font-size: 15px;
+        text-align: left;
+        margin-bottom: 10px;
     }
     
     @keyframes change {
