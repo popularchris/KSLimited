@@ -98,6 +98,50 @@ function sendMail() {
     );
 }
 
+function sendTailorMail() {
+    let checkedItems = []
+    document.querySelectorAll('[type="checkbox"]').forEach(item => {
+        if (item.checked === true) {
+            checkedItems.push(item.value)
+        }
+    })
+    const selectbtn = document.getElementsByClassName('select')
+    const accomodation = document.getElementById('Accomodation')
+    var params = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+        country: document.getElementById('country').value,
+        number: document.getElementById('number').value,
+        date: document.getElementById('date').value,
+        people: document.getElementById('people').value,
+        subject: document.getElementById('subject').value,
+        days: document.getElementById('days').value,
+        OtherActivities: document.getElementById('activities').value,
+        activities: checkedItems,
+        Budget: selectbtn.value,
+        accomodation: accomodation.value
+
+    }
+    console.log(params)
+        // console.log(`param 1,${params}`)
+        // emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
+        //     (response) => {
+        //         if (response.status === 200) {
+        //             document.getElementById('name').value = '',
+        //                 document.getElementById('email').value = '',
+        //                 document.getElementById('message').value = '',
+        //                 document.getElementById('number').value = '',
+        //                 document.getElementById('subject').value = ''
+
+    //         }
+    //     },
+    //     (error) => {
+    //         console.log('FAILED...', error);
+    //     },
+    // );
+}
+
 function sendContactMail() {
     var params = {
         name: document.getElementById('name').value,

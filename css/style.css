@@ -999,7 +999,7 @@
         justify-content: flex-start;
     }
     
-    #select {
+    .select {
         width: 200px;
         background-color: #2E6613;
         color: var(--bg-color);
@@ -1018,6 +1018,22 @@
         font-size: 15px;
         text-align: left;
         margin-bottom: 10px;
+    }
+    
+    .tailorinput-box input {
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        width: 300px;
+        justify-content: flex-start;
+        background-color: #F1E2B7;
+    }
+    
+    .tailorinput-box p {
+        margin-bottom: 12px;
+        font-size: 10px;
+        display: flex;
+        justify-content: flex-start;
     }
     
     @keyframes change {

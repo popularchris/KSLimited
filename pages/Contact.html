@@ -49,17 +49,17 @@
         </div>
     </nav>
     <section class="contact-us" id="contact-us">
-        <h2 class="contactus-heading"> Contact <span>Us </span></h2>
+        <h2 class="contactus-heading"> Contact <span>Us  ssi</span></h2>
         <form type="submit">
             <div class="contactinput-box">
-                <input type="text" id="name" placeholder="Full Name">
-                <input type="email" id="email" placeholder=" Email address">
+                <input type="text" id="name" placeholder="Full Name" required=true>
+                <input type="email" id="email" placeholder=" Email address" required>
             </div>
             <div class="contactinput-box">
-                <input type="tel" id="number" placeholder="Mobile number">
-                <input type="text" id="subject" placeholder=" Email subject">
+                <input type="tel" id="number" placeholder="Mobile number" required>
+                <input type="text" id="subject" placeholder=" Email subject" required>
             </div>
-            <textarea name="" id="message" cols="30" rows="10" placeholder="your message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="your message" required></textarea>
             <input type="button" onclick=sendContactMail() value="send message " class="contact-btn">
         </form>
     </section>
