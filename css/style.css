@@ -88,7 +88,7 @@
     nav ul,
     a,
     i {
-        color: #F1E2B7;
+        color: #F1EFEC;
         font-size: 20px;
         cursor: pointer;
     }
@@ -102,7 +102,7 @@
         text-transform: uppercase;
         cursor: pointer;
         font-size: 2.5rem;
-        color: #F1E2B7;
+        color: yellow;
     }
     
     .logo-heading:hover {
@@ -731,7 +731,7 @@
     }
     
     .home-content h1 {
-        color: var(--text-color);
+        color: var(--second-bg-color);
         /* animation: textchange 15s infinite; */
     }
     
@@ -816,7 +816,7 @@
     
     .adventure-btn1 {
         margin-top: 40px;
-        background-color: #1D460F;
+        background-color: #2E6613;
         padding: 20px;
         border-radius: 30px;
     }
@@ -1455,6 +1455,9 @@
             width: 300px;
             font-size: 15px;
         }
+        .home-content {
+            background-size: contain;
+        }
         .services-box {
             height: 520px;
         }
@@ -1607,8 +1610,11 @@
     }
     
     @media(max-width:338px) {
-        .home-content {
+        /* .home-content {
             width: 100%;
+        } */
+        .adventure-btn1 {
+            margin: 0 auto;
         }
     }
     

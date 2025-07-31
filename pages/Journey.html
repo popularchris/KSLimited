@@ -47,7 +47,7 @@
         <div class="journey-box">
             <h1 class="heading-journey"> Are ready to plan your journey?.Fill in the form below to get started.</h1>
         </div>
-        <form type="submit">
+        <form id="form">
             <div class="journeyinput-box">
                 <input type="text" id="name" placeholder="Full Name">
                 <input type="email" id="email" placeholder=" Email address">
@@ -67,31 +67,31 @@
             <div class="wrapper">
                 <h3>Choose from Our Safaris</h3>
                 <div class="group">
-                    <input type="checkbox" id="river" name="check">
+                    <input type="checkbox" value="Rivernile" id="river" name="check">
                     <label for="river">Rivernile</label></br>
                 </div>
                 <div class="group">
-                    <input type="checkbox" id="falls" name="check">
+                    <input type="checkbox" value="Busowoko falls" id="river" name="check">
                     <label for="river">Busowoko falls</label></br>
                 </div>
                 <div class="group">
-                    <input type="checkbox" id="river" name="check">
+                    <input type="checkbox" value="Lake Bunyonyi" id="river" name="check">
                     <label for="river">Lake Bunyonyi</label></br>
                 </div>
                 <div class="group">
-                    <input type="checkbox" id="river" name="check">
+                    <input type="checkbox" value="cultural immersion" id="river" name="check">
                     <label for="river">cultural immersion</label></br>
                 </div>
                 <div class="group">
-                    <input type="checkbox" id="river" name="check">
+                    <input type="checkbox" value="National Parks" id="river" name="check">
                     <label for="river">National Parks</label></br>
                 </div>
                 <div class="group">
-                    <input type="checkbox" id="river" name="check">
+                    <input type="checkbox" value="Kingdoms" id="river" name="check">
                     <label for="river">Kingdoms</label></br>
                 </div>
                 <div class="group">
-                    <input type="checkbox" id="river" name="check">
+                    <input type="checkbox" value="Gorilla treking" id="river" name="check">
                     <label for="river">Gorilla treking</label></br>
                 </div>
             </div>
@@ -99,23 +99,22 @@
                 <div class="select-box">
                     <h1>Select Your Budget Range</h1>
                     <select name="select-btn" id="select">
-                            <option value="100">$1,000-$3,000</option>
-                             <option value="100">$3,000-$5,000</option>
-                             <option value="100">$5,000-$10,000</option>
+                            <option class="options" value="$1,000-$3,000">$1,000-$3,000</option>
+                             <option class="options" value="$3,000-$5,000">$3,000-$5,000</option>
+                             <option class="options" value="$5,000-$10,000">$5,000-$10,000</option>
                         </select>
                 </div>
                 <div class="select-box">
                     <h1>Accomodation</h1>
-                    <select name="select-btn" id="select">
-                            <option value="100">Budget</option>
-                             <option value="100">Midrange</option>
-                             <option value="100">Highend</option>
+                    <select name="select-btn" id="Accomodation">
+                            <option class="options" value="Budget">Budget</option>
+                             <option class="options" value="Midrange">Midrange</option>
+                             <option class="options" value="Highend">Highend</option>
                         </select>
                 </div>
-
             </div>
             <textarea id="message" cols="30" rows="10" placeholder="Describe your kind of Journey"></textarea>
-            <input type="submit" onclick=sendMail() value="send message " class="journey-btn">
+            <input type="button" onclick=sendMail() value="send message " class="journey-btn">
             </div>
         </form>
 
