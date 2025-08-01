@@ -25,11 +25,9 @@ ScrollReveal().reveal('.starter-content', { origin: 'top' });
 ScrollReveal().reveal('.', { origin: 'top' });
 ScrollReveal().reveal('.about-content', { origin: 'top' });
 ScrollReveal().reveal('.lake-heading', { origin: 'bottom' });
-ScrollReveal().reveal('.lake-para', { origin: 'top' });
-ScrollReveal().reveal('.park-para', { origin: 'bottom' });
 ScrollReveal().reveal('.wrapper', { origin: 'bottom' });
 ScrollReveal().reveal('.park-content', { origin: 'bottom' });
-ScrollReveal().reveal('.park-heading', { origin: 'bottom' });
+ScrollReveal().reveal('.park-heading', { origin: 'bottom' })
 ScrollReveal().reveal('.culture-heading', { origin: 'bottom' });
 ScrollReveal().reveal('.culture-para', { origin: 'bottom' });
 ScrollReveal().reveal('.strong', { origin: 'top' });
@@ -45,6 +43,10 @@ ScrollReveal().reveal('.portfolio-container', { origin: 'bottom' });
 ScrollReveal().reveal('.journey', { origin: 'top' });
 ScrollReveal().reveal('.welcome', { origin: 'top' });
 ScrollReveal().reveal('.adventure-btn1', { origin: 'bottom' });
+ScrollReveal().reveal('.busuwoko-heading', { origin: 'bottom' });
+ScrollReveal().reveal('.busuwoko-content', { origin: 'bottom' });
+ScrollReveal().reveal('.lake-content', { origin: 'bottom' });
+
 
 
 
@@ -63,7 +65,9 @@ function sendMail() {
         }
     })
     const selectbtn = document.getElementById('select')
+    console.log(selectbtn.value)
     const accomodation = document.getElementById('Accomodation')
+    console.log(accomodation.value)
 
     var params = {
         name: document.getElementById('name').value,
@@ -80,22 +84,23 @@ function sendMail() {
         accomodation: accomodation.value
 
     }
-    console.log(`param 1,${params}`)
-    emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
-        (response) => {
-            if (response.status === 200) {
-                document.getElementById('name').value = '',
-                    document.getElementById('email').value = '',
-                    document.getElementById('message').value = '',
-                    document.getElementById('number').value = '',
-                    document.getElementById('subject').value = ''
+    console.log(`this is first,${Object.entries(params)}`)
+        // console.log(`param 1,${params}`)
+        // emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
+        //     (response) => {
+        //         if (response.status === 200) {
+        //             document.getElementById('name').value = '',
+        //                 document.getElementById('email').value = '',
+        //                 document.getElementById('message').value = '',
+        //                 document.getElementById('number').value = '',
+        //                 document.getElementById('subject').value = ''
 
-            }
-        },
-        (error) => {
-            console.log('FAILED...', error);
-        },
-    );
+    //         }
+    //     },
+    //     (error) => {
+    //         console.log('FAILED...', error);
+    //     },
+    // );
 }
 
 function sendTailorMail() {
@@ -105,7 +110,7 @@ function sendTailorMail() {
             checkedItems.push(item.value)
         }
     })
-    const selectbtn = document.getElementsByClassName('select')
+    const selectbtn = document.getElementById('select')
     const accomodation = document.getElementById('Accomodation')
     var params = {
         name: document.getElementById('name').value,
@@ -153,19 +158,19 @@ function sendContactMail() {
 
     }
     console.log(params)
-    emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
-        (response) => {
-            if (response.status === 200) {
-                document.getElementById('name').value = '',
-                    document.getElementById('email').value = '',
-                    document.getElementById('message').value = '',
-                    document.getElementById('number').value = '',
-                    document.getElementById('subject').value = ''
+        // emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
+        //     (response) => {
+        //         if (response.status === 200) {
+        //             document.getElementById('name').value = '',
+        //                 document.getElementById('email').value = '',
+        //                 document.getElementById('message').value = '',
+        //                 document.getElementById('number').value = '',
+        //                 document.getElementById('subject').value = ''
 
-            }
-        },
-        (error) => {
-            console.log('FAILED...', error);
-        },
-    );
+    //         }
+    //     },
+    //     (error) => {
+    //         console.log('FAILED...', error);
+    //     },
+    // );
 }
