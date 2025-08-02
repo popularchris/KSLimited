@@ -50,6 +50,8 @@ ScrollReveal().reveal('.service-listings', { origin: 'bottom' });
 ScrollReveal().reveal('.serviceheading', { origin: 'top' });
 ScrollReveal().reveal('.wrapper', { origin: 'top' });
 ScrollReveal().reveal('.servicep', { origin: 'top' });
+ScrollReveal().reveal('.nile-heading', { origin: 'bottom' });
+ScrollReveal().reveal('.nile-content', { origin: 'bottom' });
 
 
 
