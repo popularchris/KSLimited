@@ -46,6 +46,10 @@ ScrollReveal().reveal('.adventure-btn1', { origin: 'bottom' });
 ScrollReveal().reveal('.busuwoko-heading', { origin: 'bottom' });
 ScrollReveal().reveal('.busuwoko-content', { origin: 'bottom' });
 ScrollReveal().reveal('.lake-content', { origin: 'bottom' });
+ScrollReveal().reveal('.service-listings', { origin: 'bottom' });
+ScrollReveal().reveal('.serviceheading', { origin: 'top' });
+ScrollReveal().reveal('.wrapper', { origin: 'top' });
+ScrollReveal().reveal('.servicep', { origin: 'top' });
 
 
 

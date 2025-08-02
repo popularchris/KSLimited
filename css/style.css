@@ -214,6 +214,10 @@
         color: #F1E2B7;
     }
     
+    .visionp {
+        color: #2E6613;
+    }
+    
     .servivces h2 {
         margin-bottom: 5rem;
         justify-content: center;
@@ -648,12 +652,40 @@
         font-size: 50px;
     }
     
-    .vision p {
-        color: var(--main-color);
+    .vision-content p {
+        color: #2E6613;
     }
     
-    .vision .vision-content p {
+    .vision-content .spanp {
         font-size: 20px;
+    }
+    
+    .service {
+        justify-content: center;
+        margin: 0 auto;
+        background-color: #F1E2B7;
+        background-size: cover;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service .service-content p {
+        font-size: 25px;
+    }
+    
+    .service h1 {
+        text-align: center;
+        color: #A86022;
+    }
+    
+    .service .serviceheading {
+        margin-bottom: 40px;
+        font-size: 50px;
+    }
+    
+    .service p {
+        color: #2E6613;
     }
     
     .home-image img {
@@ -907,7 +939,7 @@
     }
     
     .nile-para {
-        font-size: 30px;
+        font-size: 20px;
         color: #F1E2B7;
     }
     
@@ -968,6 +1000,13 @@
     .listings {
         font-size: 20px;
         color: #F1E2B7;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    
+    .service-listings {
+        font-size: 20px;
+        color: #2E6613;
         margin-left: 50px;
         margin-top: 10px;
     }
@@ -1415,7 +1454,7 @@
             font-size: 18px;
         }
         .home-content {
-            margin-top: 30px;
+            margin-top: 50px;
         }
         .destination-plan {
             margin: 0 auto;
@@ -1733,6 +1772,8 @@
             height: 200px;
         }
         .home-content .welcome {
+            margin-top: 40px;
+            line-height: 5rem;
             font-size: 20px;
         }
         .services-box {
