@@ -89,22 +89,7 @@ function sendMail() {
 
     }
     console.log(`this is first,${Object.entries(params)}`)
-        // console.log(`param 1,${params}`)
-        // emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
-        //     (response) => {
-        //         if (response.status === 200) {
-        //             document.getElementById('name').value = '',
-        //                 document.getElementById('email').value = '',
-        //                 document.getElementById('message').value = '',
-        //                 document.getElementById('number').value = '',
-        //                 document.getElementById('subject').value = ''
-
-    //         }
-    //     },
-    //     (error) => {
-    //         console.log('FAILED...', error);
-    //     },
-    // );
+    console.log(`param 1,${params}`)
 }
 
 function sendTailorMail() {
@@ -133,22 +118,7 @@ function sendTailorMail() {
 
     }
     console.log(params)
-        // console.log(`param 1,${params}`)
-        // emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
-        //     (response) => {
-        //         if (response.status === 200) {
-        //             document.getElementById('name').value = '',
-        //                 document.getElementById('email').value = '',
-        //                 document.getElementById('message').value = '',
-        //                 document.getElementById('number').value = '',
-        //                 document.getElementById('subject').value = ''
 
-    //         }
-    //     },
-    //     (error) => {
-    //         console.log('FAILED...', error);
-    //     },
-    // );
 }
 
 function sendContactMail() {
@@ -162,19 +132,5 @@ function sendContactMail() {
 
     }
     console.log(params)
-        // emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
-        //     (response) => {
-        //         if (response.status === 200) {
-        //             document.getElementById('name').value = '',
-        //                 document.getElementById('email').value = '',
-        //                 document.getElementById('message').value = '',
-        //                 document.getElementById('number').value = '',
-        //                 document.getElementById('subject').value = ''
 
-    //         }
-    //     },
-    //     (error) => {
-    //         console.log('FAILED...', error);
-    //     },
-    // );
 }
