@@ -125,7 +125,8 @@ function sendTailorMail() {
 
 function sendContactMail() {
     var params = {
-        name: document.getElementById('name').value,
+        FirstName: document.getElementById('firstname').value,
+        LastName: document.getElementById('lastname').value,
         email: document.getElementById('email').value,
         message: document.getElementById('message').value,
         number: document.getElementById('number').value,
