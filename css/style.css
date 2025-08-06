@@ -892,6 +892,22 @@
         color: yellow;
     }
     
+    .nile-content,
+    .park-content,
+    .culture-content,
+    .lake-content,
+    .busuwoko-content {
+        line-height: 3rem;
+    }
+    
+    .culture-content {
+        line-height: 3.5rem;
+    }
+    
+    .culture-heading {
+        margin-bottom: 20px;
+    }
+    
     .busuwoko {
         background-image: url(../images/two.jpeg);
         position: relative;
