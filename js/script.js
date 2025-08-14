@@ -55,14 +55,6 @@ ScrollReveal().reveal('.nile-content', { origin: 'bottom' });
 
 
 
-
-const menuIcon = document.querySelector('.menu-icon1')
-menuIcon.addEventListener('click', function() {
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.classList.toggle('open')
-})
-
-
 function sendMail() {
     let checkedItems = []
     document.querySelectorAll('[type="checkbox"]').forEach(item => {
@@ -120,6 +112,14 @@ function sendTailorMail() {
 
     }
     console.log(params)
+
+}
+
+function toggleMenue() {
+    const exertbtn = document.querySelector('.expert-btn')
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.classList.toggle('open')
+    exertbtn.style.display = 'flex'
 
 }
 

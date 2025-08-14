@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenma Tours & Safaris</title>
     <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <!-- <div class="elfsight-app-9126eba6-8a56-4010-b823-c242e20abbbb" data-elfsight-app-lazy></div> -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -32,17 +31,19 @@
             <button class="expert-btn"><a href="./pages/Journey.html">BOOK NOW</a></button>
         </ul>
         <div class="menu-icon1">
-            <img src="./images/dehaze.svg" class="menu-icon" alt="">
+            <img src="./images/dehaze.svg" class="menu-icon" onclick=toggleMenue() alt="">
         </div>
     </nav>
     <section class="home" id="home1">
         <div class="home-content">
             <h1 class="welcome">Welcome To Kenma Tours & Safaris</h1>
-            <div class="destination-plan">
-                Get Your Journey Started with us<br>
-            </div>
-            <div class="arrow-down">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16.939 10.939L12 15.879l-4.939-4.94l-2.122 2.122L12 20.121l7.061-7.06z"/><path fill="currentColor" d="M16.939 3.939L12 8.879l-4.939-4.94l-2.122 2.122L12 13.121l7.061-7.06z"/></svg>
+            <div class="destination-wrapper">
+                <div class="destination-plan">
+                    Get Your Journey Started with us<br>
+                </div>
+                <div class="arrow-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16.939 10.939L12 15.879l-4.939-4.94l-2.122 2.122L12 20.121l7.061-7.06z"/><path fill="currentColor" d="M16.939 3.939L12 8.879l-4.939-4.94l-2.122 2.122L12 13.121l7.061-7.06z"/></svg>
+                </div>
             </div>
         </div>
     </section>
@@ -51,7 +52,7 @@
             <h1 class="starter-heading">About US</h1>
         </div>
     </section>
-    <section class="about-content ">
+    <section class="about-content " onclick=toggleMenue()>
         <h1>Where Travel Meets Connection!</h1><br>
         <p class="content-para">
             Welcome to Kenma Tours & Safaris, your doorway into Uganda, the Pearl of Africa. We design immersive, personalized travel experiences that go beyond sightseeing. Whether you’re visiting for a romantic escape, research, a long-awaited return, or pure adventure,
@@ -65,8 +66,8 @@
             <p class="spanp">At Kenma Tours & Safaris, we believe every tour and safari is an invitation to connect with Uganda’s breathtaking nature, vibrant cultures, and endless adventures waiting to be discovered.</p>
         </div>
     </section>
-    <section class="vision ">
-        <div class="vision-content ">
+    <section class="mission ">
+        <div class="mission-content ">
             <h1 class="spanheading">Our <span class="multiple-text"> Mission</span></h1>
             <p class="spanp">To create unforgettable travel experiences that reveal Uganda's breathtaking beauty, rich culture, inspiring connection, belonging, and discovery for every traveler.</p>
         </div>
@@ -76,14 +77,14 @@
         <div class="services-container ">
             <div class="services-box ">
                 <img src="./images/rivernile.jpg " alt=" ">
-                <div>
 
-                    <h1>River Nile</h1>
-                    <h3>
-                        Cruise, raft or Kayyak along the world's largets river from its vibrant source.
-                    </h3>
-                    <a href="./pages/rivernile.html" class="btn ">Read more</i></a>
-                </div>
+
+                <h1>River Nile</h1>
+                <h3>
+                    Cruise, raft or Kayyak along the world's largets river from its vibrant source.
+                </h3>
+                <a href="./pages/rivernile.html" class="btn ">Read more</i></a>
+
             </div>
             <div class="services-box ">
                 <img src="./images/two.jpeg " alt=" ">

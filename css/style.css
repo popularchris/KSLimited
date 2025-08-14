@@ -119,14 +119,6 @@
         padding: 5px;
     }
     
-    .sidebar.open {
-        height: 450px;
-    }
-    
-    .sidebar ul .open {
-        opacity: 1;
-    }
-    
     #menu-icon {
         font-size: 3.6rem;
         color: var(--text-color);
@@ -155,20 +147,17 @@
         font-size: 20px;
     }
     
-    .home-content i {
-        color: red;
-    }
-    
     .home-content h1 {
-        margin-bottom: 30px;
-        font-size: 100px;
-        line-height: 15rem;
+        margin-bottom: 20px;
         text-align: center;
+        line-height: 20rem;
+        font-size: 100px;
     }
     
     .destination-plan {
         color: yellow;
         margin-bottom: 20px;
+        margin-top: 10px;
         position: absolute;
         top: 85%;
         left: 50%;
@@ -646,6 +635,7 @@
         object-fit: cover;
         display: flex;
         flex-direction: column;
+        border-bottom: 20px solid var(--main-color);
     }
     
     .vision h1 {
@@ -663,6 +653,35 @@
     }
     
     .vision-content .spanp {
+        font-size: 20px;
+    }
+    /* mision */
+    
+    .mission {
+        justify-content: center;
+        margin: 0 auto;
+        background-color: #F1E2B7;
+        background-size: cover;
+        object-fit: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mission h1 {
+        text-align: center;
+        color: #A86022;
+    }
+    
+    .mission .spanheading {
+        margin-bottom: 40px;
+        font-size: 50px;
+    }
+    
+    .mission-content p {
+        color: #2E6613;
+    }
+    
+    .mission-content .spanp {
         font-size: 20px;
     }
     
@@ -1105,6 +1124,19 @@
         justify-content: flex-start;
     }
     
+    .sidebar.open {
+        display: flex;
+        padding: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 500px;
+        background-color: var(--main-color);
+        margin-top: 550px;
+        flex-direction: column;
+        opacity: 1;
+    }
+    
     @keyframes change {
         0% {
             background-image: url(../images/ele2.JPG);
@@ -1193,6 +1225,10 @@
         .home-content .welcome {
             font-size: 70px;
         }
+        .home-content.destination-wrapper {
+            display: flex;
+            background-color: red;
+        }
     }
     
     @media(max-width:1024px) {
@@ -1220,6 +1256,11 @@
         .send-btn {
             margin-top: 20px;
         }
+        .home-content .welcome {
+            margin-top: 20px;
+            line-height: 13rem;
+            margin-bottom: 10px;
+        }
     }
     
     @media(max-width:1000px) {
@@ -1244,18 +1285,12 @@
         .header {
             padding: 2rem 3%;
         }
+        .home-content .welcome {
+            line-height: 20rem;
+            font-size: 80px;
+        }
         section {
             padding: 10rem 3%;
-        }
-        .home-content h1 {
-            margin-top: 30px;
-            line-height: 5rem;
-            text-align: center;
-        }
-        .home-content h1 {
-            font-size: 60px;
-            line-height: 10rem;
-            margin-bottom: 20px;
         }
         .footer {
             padding: 2rem 3%;
@@ -1263,20 +1298,29 @@
         .starter-content h1 {
             margin-bottom: 100px;
         }
-    }
-    
-    @media(max-width:995px) {
-        .destinationplan {
-            margin-bottom: 20px;
+        .sidebar {
+            display: flex;
+            padding: 10px;
+            position: absolute;
+            left: 0;
+            right: -300px;
+            margin-top: 550px;
+            transition: 0.3s ease;
+            flex-direction: column;
+            opacity: 0;
+        }
+        .sidebar ul {
+            margin-top: 10px;
+            padding: 20px;
+        }
+        .sidebar .expert-btn {
+            margin-bottom: 10px;
         }
     }
     
-    @media(max-width:912px) {
+    @media(max-width:917px) {
         .home-content .welcome {
             line-height: 20rem;
-        }
-        .arrow-down {
-            margin-bottom: 30px;
         }
         .starter .starter-heading {
             margin-top: 40rem;
@@ -1344,9 +1388,6 @@
         .home-content .welcome {
             line-height: 20rem;
         }
-        .arrow-down {
-            margin-bottom: 40px;
-        }
         .starter-content .starter-heading {
             margin-top: 30rem;
         }
@@ -1372,73 +1413,6 @@
         }
         .adventure-btn1 {
             margin-top: 30px;
-        }
-    }
-    
-    @media(max-width:656px) {
-        .home-content .welcome {
-            font-size: 50px;
-        }
-        .destination-plan {
-            display: inline-block;
-            width: 400px;
-        }
-        .services .heading {
-            font-size: 50px;
-        }
-    }
-    
-    @media(max-width:737px) {
-        .logo-heading {
-            font-size: 30px;
-        }
-        .menu-icon1 {
-            display: flex;
-        }
-        .sidebar {
-            display: flex;
-            height: 0px;
-            position: absolute;
-            top: 77px;
-            right: 0;
-            left: 0;
-            background-color: #1E460F;
-            flex-direction: column;
-            opacity: 1;
-            transition: 0.3s ease;
-            overflow: hidden;
-        }
-        .sidebar a {
-            color: #F1E2B7;
-        }
-        .sidebar ul li {
-            margin-top: 20px;
-        }
-        .expert-btn {
-            display: flex;
-        }
-        .expert-btn a {
-            color: #b86338;
-        }
-        .starter-content h1 {
-            font-size: 50px;
-            margin-bottom: 130px;
-        }
-    }
-    
-    @media(max-width:712px) {
-        .home-content .welcome {
-            margin-top: 20px;
-            line-height: 20rem;
-        }
-        .destination-plan {
-            margin-bottom: 20px;
-        }
-        .heading {
-            font-size: 50px;
-        }
-        .contactheading {
-            font-size: 50px;
         }
     }
     
@@ -1499,6 +1473,7 @@
         .destination-plan {
             display: inline-block;
             width: 400px;
+            margin: 0 auto;
         }
         .starter-content .starter-heading {
             font-size: 45px;
@@ -1512,6 +1487,47 @@
         .services .heading,
         .contactheading,
         .projects .heading {
+            font-size: 50px;
+        }
+    }
+    
+    @media(max-width:737px) {
+        .sidebar {
+            display: flex;
+            padding: 10px;
+            position: absolute;
+            left: 0;
+            right: -300px;
+            margin-top: 550px;
+            transition: 0.3s ease;
+            flex-direction: column;
+            opacity: 0;
+        }
+        .sidebar ul {
+            margin-top: 10px;
+            padding: 20px;
+        }
+        .sidebar .expert-btn {
+            margin-bottom: 10px;
+        }
+        .menu-icon {
+            display: flex;
+        }
+        .menu-icon1 {
+            display: flex;
+        }
+    }
+    
+    @media(max-width:656px) {
+        .home-content .welcome {
+            font-size: 50px;
+        }
+        .destination-plan {
+            display: inline-block;
+            width: 300px;
+            font-size: 15px;
+        }
+        .services .heading {
             font-size: 50px;
         }
     }
@@ -1543,6 +1559,9 @@
         .home-content h1 {
             font-size: 30px;
         }
+        .destination-plan {
+            margin: 0 auto;
+        }
     }
     
     @media(max-width:540px) {
@@ -1550,7 +1569,7 @@
             font-size: 20px;
         }
         .home-content .welcome {
-            font-size: 40px;
+            font-size: 45px;
         }
         .destination-plan {
             width: 300px;
@@ -1565,6 +1584,16 @@
         }
         .services-container {
             grid-template-columns: repeat(1, 1fr);
+        }
+    }
+    
+    @media(max-width:500px) {
+        .para-heading,
+        .culture-heading {
+            line-height: 7rem;
+        }
+        .culture-heading {
+            margin-left: 10px;
         }
     }
     
@@ -1603,6 +1632,14 @@
             width: 300px;
             font-size: 13px;
         }
+        .arrow-down {
+            color: yellow;
+            position: absolute;
+            bottom: 10px;
+            margin: 0 auto;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
     
     @media(max-width:430px) {
@@ -1613,9 +1650,6 @@
             width: 250px;
             font-size: 10px;
             margin-bottom: 30px;
-        }
-        .arrow-down {
-            margin-bottom: 50px;
         }
         .about-content h1 {
             font-size: 20px;
@@ -1631,7 +1665,7 @@
             letter-spacing: 1.5rem;
         }
         .home-content h1 {
-            line-height: 10rem;
+            margin-bottom: 50px;
         }
         .home-content .welcome {
             font-size: 35px;
@@ -1781,7 +1815,7 @@
             margin-top: 10px;
         }
         .destination-plan {
-            margin-bottom: 150px;
+            margin: 0 auto;
         }
         .arrow-down {
             margin-top: 80px;
@@ -1850,6 +1884,69 @@
         }
     }
     
+    @media(max-width:360px) {
+        #menu-icon {
+            display: block;
+        }
+        .home img {
+            width: 90vw;
+        }
+        .about img {
+            width: 70vw;
+        }
+        .footer {
+            flex-direction: column-reverse;
+        }
+        .footer p {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .ceo-heading {
+            font-size: 20px;
+        }
+        .ceo-heading {
+            font-size: 15px;
+        }
+        .services-box h1 {
+            font-size: 20px;
+        }
+        .services-box h3 {
+            font-size: 15px;
+        }
+        .services-box a {
+            font-size: 15px;
+        }
+        .logo-heading {
+            font-size: 15px;
+        }
+        .menu-icon1 {
+            width: 20px;
+        }
+        .navbar {
+            width: 10%;
+        }
+        .home-content {
+            width: 100%;
+        }
+        .vision-content h1 {
+            font-size: 20px;
+        }
+        .vision-content p {
+            font-size: 15px;
+        }
+        .services-box {
+            height: 450px;
+        }
+        .home-content .welcome {
+            font-size: 30px;
+        }
+        .destination-plan {
+            width: 200px;
+            font-size: 9px;
+            margin-bottom: 20px;
+        }
+    }
+    
     @media(max-width:350px) {
         .ceo img {
             width: 100px;
@@ -1904,11 +2001,9 @@
     }
     
     @media(max-width:344px) {
-        .home-content .welcome {
-            line-height: 20rem;
-        }
         .destination-plan {
             margin-bottom: 20px;
+            margin: 0 auto;
         }
     }
     
@@ -1929,6 +2024,9 @@
         .culture-heading,
         .busuwoko-heading {
             font-size: 30px;
+        }
+        .destination-plan {
+            margin-bottom: 20px;
         }
     }
     
@@ -2001,12 +2099,15 @@
         .footer-box span {
             font-size: 12px;
         }
+        .home-content .welcome {
+            font-size: 20px;
+        }
     }
     
     @media(max-width:250px) {
         .destination-plan {
-            width: 190px;
-            font-size: 9px;
+            width: 150px;
+            font-size: 7px;
         }
         .services-box {
             height: 200px;
@@ -2019,19 +2120,21 @@
         .services-box {
             width: 100%;
         }
+        .starter-content .starter-heading {
+            font-size: 15px;
+        }
     }
     
     @media(max-width:228px) {
         .home-content {
             width: 100%;
         }
+        .wrapper h3 {
+            line-height: 4rem;
+        }
         .ceo img {
             width: 100px;
             height: 100px;
-        }
-        .destination-plan {
-            width: 190px;
-            font-size: 8px;
         }
         .vision-content .spanheading {
             font-size: 30px;
@@ -2055,7 +2158,7 @@
             width: 100%;
         }
         .home-content .welcome {
-            font-size: 15px;
+            font-size: 17px;
         }
         .starter-heading {
             font: 10px;
@@ -2105,8 +2208,8 @@
             font-size: 10px;
         }
         .destination-plan {
-            font-size: 7px;
-            width: 160px;
+            font-size: 5px;
+            width: 130px;
         }
         .starter-content h1 {
             line-height: 10rem;
@@ -2131,9 +2234,6 @@
         }
         .footer-box span {
             font-size: 8px;
-        }
-        .destination-plan {
-            margin: 0 auto;
         }
     }
     
