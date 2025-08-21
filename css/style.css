@@ -115,7 +115,8 @@
     
     .active {
         border-bottom: 2px solid yellow;
-        border-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
         padding: 5px;
     }
     
@@ -231,6 +232,10 @@
     
     .services {
         background-color: #2E6613;
+    }
+    
+    .service-listings {
+        line-height: 40px;
     }
     
     .portfolio-box img {
@@ -945,6 +950,10 @@
         bottom: 0;
     }
     
+    .group label {
+        line-height: 40px;
+    }
+    
     .busuwoko-heading {
         font-size: 60px;
         color: yellow;
@@ -1103,7 +1112,7 @@
     }
     
     .select-box h1 {
-        font-size: 15px;
+        font-size: 20px;
         text-align: left;
         margin-bottom: 10px;
     }
@@ -1119,8 +1128,9 @@
     
     .tailorinput-box p {
         margin-bottom: 12px;
-        font-size: 10px;
+        font-size: 20px;
         display: flex;
+        font-weight: 600;
         justify-content: flex-start;
     }
     
@@ -1516,6 +1526,16 @@
         .menu-icon1 {
             display: flex;
         }
+        .group input {
+            margin-left: 30px;
+            border: 1px solid red;
+        }
+        .select-box {
+            margin-left: 30px;
+        }
+        .tailorinput-box {
+            margin-left: 30px;
+        }
     }
     
     @media(max-width:656px) {
@@ -1585,6 +1605,10 @@
         .services-container {
             grid-template-columns: repeat(1, 1fr);
         }
+        .tailorinput-box {
+            margin-left: 30px;
+            text-align: left;
+        }
     }
     
     @media(max-width:500px) {
@@ -1594,6 +1618,10 @@
         }
         .culture-heading {
             margin-left: 10px;
+        }
+        .footer {
+            display: flex;
+            flex-direction: column;
         }
     }
     
@@ -1613,6 +1641,9 @@
         .destinationplan {
             margin: 0 auto;
             margin-bottom: 70px;
+        }
+        .tailorinput-box {
+            margin-left: 30px;
         }
     }
     
@@ -1682,8 +1713,10 @@
             font-size: 25px;
         }
         .vision-content .spanheading,
+        .mission-content .spanheading,
         .services .heading,
         .projects .heading,
+        .starter-content .starter-heading,
         .service .serviceheading,
         .contactheading {
             font-size: 30px;
@@ -1945,6 +1978,11 @@
             font-size: 9px;
             margin-bottom: 20px;
         }
+        /* #message {
+            width: 340px;
+            margin: 0 auto;
+            margin-top: 30px;
+        } */
     }
     
     @media(max-width:350px) {
@@ -1998,6 +2036,9 @@
         .adventure-btn1 a {
             font-size: 10px;
         }
+        .tailorinput-box input {
+            width: 240px;
+        }
     }
     
     @media(max-width:344px) {
@@ -2027,6 +2068,14 @@
         }
         .destination-plan {
             margin-bottom: 20px;
+        }
+        .wrapper h3 {
+            text-align: left;
+            margin-left: 30px;
+            line-height: 30px;
+        }
+        .select-box h1 {
+            line-height: 30px;
         }
     }
     
@@ -2101,6 +2150,23 @@
         }
         .home-content .welcome {
             font-size: 20px;
+        }
+        .starter-content .starter-heading {
+            font-size: 20px;
+        }
+        .service-listings {
+            line-height: 30px;
+        }
+        .contact .contactheading {
+            font-size: 20px;
+        }
+        .wrapper h3 {
+            text-align: left;
+            margin-left: 30px;
+            line-height: 30px;
+        }
+        .select-box h1 {
+            line-height: 30px;
         }
     }
     
