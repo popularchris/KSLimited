@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenma Tours & Safaris</title>
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script src="./js/script.js" defer></script>
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "ulRmV7r89nGq4XKhN",
+            });
+        })();
+    </script>
 </head>
 
 <body>
@@ -53,7 +58,7 @@
             <h1 class="starter-heading">About US</h1>
         </div>
     </section>
-    <section class="about-content " onclick=toggleMenue()>
+    <section class="about-content ">
         <h1>Where Travel Meets Connection!</h1><br>
         <p class="content-para">
             Welcome to Kenma Tours & Safaris, your doorway into Uganda, the Pearl of Africa. We design immersive, personalized travel experiences that go beyond sightseeing. Whether you’re visiting for a romantic escape, research, a long-awaited return, or pure adventure,
