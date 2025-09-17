@@ -72,7 +72,7 @@ function sendContactMail() {
         message: document.getElementById('message').value
     }
 
-    emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
+    emailjs.send('service_5qmrtb8', 'template_zgsfwqj', params).then(
         (response) => {
             if (response.status === 200) {
                 document.getElementById('firstname').value = '',
@@ -117,7 +117,7 @@ function sendTailorMail() {
         accomodation: accomodation.value
 
     }
-    emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
+    emailjs.send('service_5qmrtb8', 'template_lg5ws39', params).then(
         (response) => {
             console.log('SUCCESS!', response.status, response.text);
         },
@@ -153,7 +153,7 @@ function sendMail() {
         accomodation: accomodation.value
 
     }
-    emailjs.send('service_nihox9k', 'template_pzv5l58', params).then(
+    emailjs.send('service_5qmrtb8', 'template_lg5ws39', params).then(
         (response) => {
 
             if (response.status === 200) {
