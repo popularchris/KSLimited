@@ -192,6 +192,18 @@
         color: #F1E2B7;
         text-transform: uppercase;
         margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding: 10px;
+        margin-left: 10px;
+    }
+    
+    .card img {
+        height: 350px;
+        object-fit: cover;
+    }
+    
+    .card-content h1 {
+        color: #b86338;
     }
     
     .btn:hover {
@@ -475,7 +487,7 @@
         margin-bottom: 3rem;
     }
     
-    .journey form .input-box {
+    .journey form input-box {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -490,7 +502,7 @@
         color: var(--another);
         background-color: #F1E2B7;
         border-radius: .8rem;
-        margin: .7rem 0;
+        margin: 1rem 0;
         margin-top: 20px;
         border: 1px solid #2E6613;
     }
@@ -544,17 +556,17 @@
     
     .contact-us form {
         max-width: 70rem;
-        margin: 1rem auto;
+        margin: 5rem auto;
         text-align: center;
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
     }
-    
-    .contact-us form .input-box {
+    /* .contact-us form .input-box {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         color: var(--text-color);
     }
+     */
     
     .contactinput-box input,
     .contact-us form textarea {
@@ -564,7 +576,7 @@
         color: #A86022;
         background-color: #F1E2B7;
         border-radius: .8rem;
-        margin: .7rem 0;
+        margin: 1rem 0;
         margin-top: 20px;
         border: 1px solid #2E6613;
     }
@@ -588,6 +600,27 @@
         color: #F1E2B7;
         border-radius: 30px;
         font-size: 15px;
+    }
+    
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+    
+    .card {
+        width: 350px;
+        background-color: #F1EFEC;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, .2);
+        margin: 20px;
+    }
+    
+    .card-content {
+        padding: 10px;
     }
     
     .contact-btn:hover {
@@ -903,17 +936,58 @@
         background-position: center;
         background-size: cover;
     }
-    
-    .nile-heading {
+    /* .nile-heading {
         position: absolute;
         margin: 0 auto;
         left: 0;
         bottom: 0;
-    }
+    } */
     
     .nile-heading {
-        font-size: 60px;
+        font-size: 30px;
         color: yellow;
+        line-height: 80px;
+    }
+    
+    .headings-lake {
+        margin-top: 20px;
+        color: #F1E2B7;
+    }
+    
+    .logoimg {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .hey {
+        font-size: 20px;
+        color: #F1E2B7;
+    }
+    
+    .culture-content {
+        color: #F1E2B7;
+        font-size: 20px;
+    }
+    
+    .bannerimage {
+        width: 800px;
+        height: 800px;
+    }
+    
+    .primate-heading {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #F1E2B7;
+    }
+    
+    .primate-content {
+        font-size: 20px;
+        color: #F1E2B7;
+    }
+    
+    .logo {
+        display: flex;
+        gap: 5px;
     }
     
     .nile-content,
@@ -933,7 +1007,7 @@
     }
     
     .busuwoko {
-        background-image: url(../images/two.jpeg);
+        background-image: url(../images/kampala-jpg.webp);
         position: relative;
         background-size: cover;
         background-position: center;
@@ -966,7 +1040,7 @@
     
     .lake {
         position: relative;
-        background-image: url(../images/lake.jpg);
+        background-image: url(../images/fall5.jpeg);
         object-fit: cover;
         background-size: cover;
     }
@@ -1020,6 +1094,10 @@
         background-size: cover;
     }
     
+    .primatesec {
+        line-height: 30px;
+    }
+    
     .tooro-heading {
         position: absolute;
         left: 0;
@@ -1033,10 +1111,37 @@
         font-size: 25px;
     }
     
-    .park {
+    .card:hover {
+        border-radius: 10px;
+        box-shadow: 0 0 .5rem yellow;
+        ;
+    }
+    
+    .grandsection {
+        color: #F1E2B7;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+    .grandimg {
         background-image: url(../images/mur-antelope.jpg);
+        object-fit: cover;
+        justify-content: center;
+        background-position: center;
+    }
+    
+    .park {
+        background-image: url(../images/Gorilla.jpg);
         position: relative;
         background-size: cover;
+    }
+    
+    .primate-section {
+        background-image: url(../images/lioon2.jpeg);
+        object-fit: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
     }
     
     .park-heading {
@@ -1242,7 +1347,7 @@
     }
     
     @media(max-width:1024px) {
-        .services-container {
+        .card-container {
             grid-template-columns: repeat(2, 1fr);
         }
         .sidebar {
@@ -1513,6 +1618,16 @@
             flex-direction: column;
             opacity: 0;
         }
+        .card-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card {
+            width: 250px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+        }
         .sidebar ul {
             margin-top: 10px;
             padding: 20px;
@@ -1595,6 +1710,16 @@
             width: 300px;
             font-size: 15px;
         }
+        .card-container {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .card {
+            width: 450px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+        }
         .starter {
             background-position: center;
             background-size: cover;
@@ -1670,6 +1795,21 @@
             margin: 0 auto;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+        .card {
+            width: 350px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo-heading {
+            font-size: 10px;
+            display: none;
+        }
+        .logoimg {
+            width: 60px;
+            height: 70px;
         }
     }
     
@@ -2038,6 +2178,13 @@
         }
         .tailorinput-box input {
             width: 240px;
+        }
+        .card {
+            width: 280px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
         }
     }
     
