@@ -931,22 +931,30 @@
     }
     
     .nile {
-        background-image: url(../images/water-adventure.jpg);
+        background-image: url(../images/Source-of-the-Nile.jpg);
         position: relative;
         background-position: center;
         background-size: cover;
+        animation: nilechange 15s infinite ease-out;
     }
-    /* .nile-heading {
+    
+    .nile-heading {
         position: absolute;
         margin: 0 auto;
         left: 0;
-        bottom: 0;
-    } */
+        bottom: 900px;
+    }
     
     .nile-heading {
         font-size: 30px;
         color: yellow;
         line-height: 80px;
+    }
+    
+    .primate-heading {
+        position: absolute;
+        color: yellow;
+        bottom: 10px;
     }
     
     .headings-lake {
@@ -977,7 +985,7 @@
     .primate-heading {
         margin-bottom: 20px;
         font-size: 30px;
-        color: #F1E2B7;
+        color: yellow;
     }
     
     .primate-content {
@@ -1011,6 +1019,8 @@
         position: relative;
         background-size: cover;
         background-position: center;
+        animation: kampalachange 15s infinite ease-out;
+        ;
     }
     
     .busowoko-content .listings {
@@ -1040,9 +1050,10 @@
     
     .lake {
         position: relative;
-        background-image: url(../images/fall5.jpeg);
+        background-image: url(../images/murchision\ falls.webp);
         object-fit: cover;
         background-size: cover;
+        animation: murchisionchange 15s infinite ease-in-out;
     }
     
     .lake-container {
@@ -1128,20 +1139,23 @@
         object-fit: cover;
         justify-content: center;
         background-position: center;
+        animation: grandchange 15s infinite ease-out;
     }
     
     .park {
         background-image: url(../images/Gorilla.jpg);
         position: relative;
         background-size: cover;
+        animation: chimpchange 15s infinite ease-out;
     }
     
     .primate-section {
-        background-image: url(../images/lioon2.jpeg);
+        background-image: url(../images/lions-in-Uganda-1200x675.webp);
         object-fit: cover;
         background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
+        animation: primatechange 15s infinite ease-out;
     }
     
     .park-heading {
@@ -1252,6 +1266,14 @@
         opacity: 1;
     }
     
+    .grandheading {
+        color: yellow;
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        font-size: 40px;
+    }
+    
     @keyframes change {
         0% {
             background-image: url(../images/ele2.JPG);
@@ -1262,10 +1284,33 @@
             background-position: center;
             object-fit: cover;
         }
+        10% {
+            background-image: url(../images/ken.jpeg);
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        20% {
+            background-image: url(../images/ken2.jpeg);
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        30% {
+            background-image: url(../images/ken4.jpeg);
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
         40% {
             background-image: url(../images/hand.jpeg);
             background-size: cover;
             background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/ken12.jpeg);
+            background-size: cover;
             object-fit: cover;
         }
         60% {
@@ -1279,6 +1324,12 @@
             background-position: center;
             object-fit: cover;
         }
+        90% {
+            background-image: url(../images/ken15.jpeg);
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
         100% {
             background-image: url(../images/mur-antelope.jpg);
             background-size: cover;
@@ -1288,24 +1339,167 @@
         }
     }
     
-    @keyframes textchange {
+    @keyframes nilechange {
+        10% {
+            background-image: url(../images/source-of-the-niles.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/Source-of-the-River-Nile-2.jpeg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        90% {
+            background-image: url(../images/Jinja-source-of-the-nile.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+    }
+    
+    @keyframes murchisionchange {
+        10% {
+            background-image: url(../images/Murchison-Falls.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        30% {
+            background-image: url(../images/murchison-falls-NP-scaled.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+    }
+    
+    @keyframes primatechange {
+        10% {
+            background-image: url(../images/lions-in-Uganda-1200x675.webp);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/lioon1.jpeg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/lioon4.jpeg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+    }
+    
+    @keyframes kampalachange {
+        10% {
+            background-image: url(../images/kampala-city-night.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/Kampala-City-2.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        90% {
+            background-image: url(../images/kampala-road.webp);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/kampala-jpg.webp);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+    }
+    
+    @keyframes primatechange {
         0% {
             color: yellow;
         }
         10% {
-            color: yellow;
+            background-image: url(../images/lions-in-Uganda-1200x675.webp);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
         }
-        40% {
-            color: var(--text-color);
+        30% {
+            background-image: url(../images/lioon1.jpeg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
         }
-        60% {
-            color: var(--text-color);
+    }
+    
+    @keyframes chimpchange {
+        10% {
+            background-image: url(../images/Gorilla-Habituation-Expereince-1.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
         }
-        80% {
-            color: yellow;
+        50% {
+            background-image: url(../images/mountaingoril.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+    }
+    
+    @keyframes grandchange {
+        10% {
+            background-image: url(../images/Goat.jpeg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/mountaingoril.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        50% {
+            background-image: url(../images/ken19.jpeg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
         }
         100% {
-            color: var(--text-color);
+            background-image: url(../images/.jpeg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
         }
     }
     
@@ -1805,7 +1999,9 @@
         }
         .logo-heading {
             font-size: 10px;
-            display: none;
+        }
+        .group label {
+            font-size: 15px;
         }
         .logoimg {
             width: 60px;
@@ -2192,6 +2388,9 @@
         .destination-plan {
             margin-bottom: 20px;
             margin: 0 auto;
+        }
+        .group label {
+            font-size: 12px;
         }
     }
     
