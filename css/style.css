@@ -931,7 +931,7 @@
     }
     
     .nile {
-        background-image: url(../images/Source-of-the-Nile.jpg);
+        background-image: url(../images/Source-of-the-River-Nile-2.jpeg);
         position: relative;
         background-position: center;
         background-size: cover;
@@ -1341,21 +1341,14 @@
     
     @keyframes nilechange {
         10% {
-            background-image: url(../images/source-of-the-niles.jpg);
-            background-size: cover;
-            background-size: cover;
-            background-position: center;
-            object-fit: cover;
-        }
-        50% {
             background-image: url(../images/Source-of-the-River-Nile-2.jpeg);
             background-size: cover;
             background-size: cover;
             background-position: center;
             object-fit: cover;
         }
-        90% {
-            background-image: url(../images/Jinja-source-of-the-nile.jpg);
+        50% {
+            background-image: url(../images/source1.jpg);
             background-size: cover;
             background-size: cover;
             background-position: center;
