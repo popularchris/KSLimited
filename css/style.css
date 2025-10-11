@@ -138,7 +138,7 @@
         margin-right: auto;
         justify-content: center;
         align-items: center;
-        animation: change 15s infinite ease-out;
+        animation: change 30s infinite ease-out;
     }
     
     .home-content h3 {
@@ -1139,14 +1139,14 @@
         object-fit: cover;
         justify-content: center;
         background-position: center;
-        animation: grandchange 15s infinite ease-out;
+        animation: grandchange 30s infinite ease-out;
     }
     
     .park {
         background-image: url(../images/Gorilla.jpg);
         position: relative;
         background-size: cover;
-        animation: chimpchange 15s infinite ease-out;
+        animation: chimpchange 30s infinite ease-out;
     }
     
     .primate-section {
@@ -1155,7 +1155,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         justify-content: center;
-        animation: primatechange 15s infinite ease-out;
+        animation: primatechange 30s infinite ease-out;
     }
     
     .park-heading {
@@ -1275,45 +1275,36 @@
     }
     
     @keyframes change {
-        0% {
-            background-image: url(../images/ele2.JPG);
-        }
-        10% {
-            background-image: url(../images/ele2.JPG);
-            background-size: cover;
-            background-position: center;
-            object-fit: cover;
-        }
         10% {
             background-image: url(../images/ken.jpeg);
             background-size: cover;
             background-position: center;
             object-fit: cover;
         }
-        20% {
-            background-image: url(../images/ken2.jpeg);
-            background-size: cover;
-            background-position: center;
-            object-fit: cover;
-        }
         30% {
-            background-image: url(../images/ken4.jpeg);
+            background-image: url(../images/ele5.JPG);
             background-size: cover;
             background-position: center;
             object-fit: cover;
         }
         40% {
-            background-image: url(../images/hand.jpeg);
+            background-image: url(../images/ele5.JPG);
             background-size: cover;
             background-position: center;
             object-fit: cover;
         }
         50% {
-            background-image: url(../images/ken12.jpeg);
+            background-image: url(../images/hand.jpeg);
             background-size: cover;
+            background-position: center;
             object-fit: cover;
         }
         60% {
+            background-image: url(../images/ele1.JPG);
+            background-size: cover;
+            object-fit: cover;
+        }
+        70% {
             background-image: url(../images/hippo.jpg);
             background-size: cover;
             object-fit: cover;
