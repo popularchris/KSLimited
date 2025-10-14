@@ -613,9 +613,13 @@
                 <input type="tel" id="number" placeholder="Mobile number">
                 <input type="text" id="subject" placeholder=" Email subject">
             </div>
-            <textarea type="text" id="message" cols="30" rows="10" placeholder="your message"></textarea>
-            <input type="button" onclick=sendContactMail() value="Send message " class="send-btn">
         </form>
+        <div class="contacttextarea">
+            <div class="contacttextareawrapper">
+                <textarea type="text" id="message" cols="30" rows="10" placeholder="your message"></textarea><br>
+                <input type="submit" onclick=sendContactMail() value="Send message " class="send-btn">
+            </div>
+        </div>
     </section>
     <section class="ceo-section ">
         <div class="ceo ">

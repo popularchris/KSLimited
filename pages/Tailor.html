@@ -49,99 +49,110 @@
         <div class="journey-box">
             <h1 class="heading-journey"> Are ready to plan your journey?.Fill in the form below to get started.</h1>
         </div>
-        <form id="form">
+        <form type="submit" id="form">
             <div class="journeyinput-box">
+                <label for="name">Enter Your Full Name</label>
                 <input type="text" id="name" placeholder="Full Name" required>
+                <label for="name">Enter Your email</label>
                 <input type="email" id="email" placeholder=" Email address" required>
             </div>
             <div class="journeyinput-box">
+                <label for="number">Enter Your Phone number</label>
                 <input type="tel" id="number" placeholder="Mobile number" required>
+                <label for="subject">Enter Your Subject</label>
                 <input type="text" id="subject" placeholder=" Enter subject" required>
             </div>
             <div class="journeyinput-box">
+                <label for="country">Enter Your country of origin</label>
                 <input type="text" id="country" placeholder="Country of Origin " required>
-                <input type="date" id="date" placeholder=" Email travel dates" required>
+                <label for="date">Enter Your date of travel</label>
+                <input type="date" id="date" placeholder=" Enter travel dates" required>
             </div>
             <div class="journeyinput-box" required>
+                <label for="people">Enter Your number of travelers</label>
                 <input type="number" id="people" placeholder="Enter number of  Travelers" required>
+                <label for="days">Enter number of days on trip</label>
                 <input type="number" id="days" placeholder=" Enter number of days" required>
             </div>
-            <div class="wrapper">
-                <h3>Travel Activities</h3>
-                <div class="group">
-                    <input type="checkbox" value="Gorilla Trekking" id="river" name="check">
-                    <label for="river">Gorilla Trekking</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Chimpanze Trekking" id="river" name="check">
-                    <label for="river">Chimpanze Trekking</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Wildlife-GameDrives" id="river" name="check">
-                    <label for="river">Wildlife-GameDrives</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Boat Cruises" id="river" name="check">
-                    <label for="river">Boat Cruises</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Cultural Encounters" id="river" name="check">
-                    <label for="river">Cultural Encounters</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Hot-Air Ballooning" id="river" name="check">
-                    <label for="river">Hot-Air Ballooning</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="White-Water Raftin" id="river" name="check">
-                    <label for="river">White-Water Rafting</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Camping" id="river" name="check">
-                    <label for="river">Camping</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Bird Waching" id="river" name="check">
-                    <label for="river">Bird Waching</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="City Tours" id="river" name="check">
-                    <label for="river">City Tours</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Rhino Trekking" id="river" name="check">
-                    <label for="river">Rhino Trekking</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Golden Monkey Trekg" id="river" name="check">
-                    <label for="river">Golden Monkey Trek</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Mountaineering" id="river" name="check">
-                    <label for="river">Mountaineering</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Honeymoon Holiday" id="river" name="check">
-                    <label for="river">Honeymoon Holiday</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Adventure Sport Tours" id="river" name="check">
-                    <label for="river">Adventure Sport Tours</label></br>
-                </div>
-                <div class="group">
-                    <input type="checkbox" value="Nature Walks" id="river" name="check">
-                    <label for="river">Nature Walks</label></br>
-                </div>
             </div>
-            <div class="tailorinput-box">
-                <p>Specify Other activiies if not on the list above.</p>
-                <input type="text" id="activities" placeholder="Please enter Other activities" required>
+
             </div>
+        </form>
+        <div class="wrapper">
+            <h3>Travel Activities</h3>
+            <div class="group">
+                <input type="checkbox" value="Gorilla Trekking" id="river" name="check">
+                <label for="river">Gorilla Trekking</label></br>
             </div>
-            <div class="select-wrapper">
-                <div class="select-box">
-                    <h1>Select Your Budget Range</h1>
-                    <select name="select-btn" id="select" class="select" required>
+            <div class="group">
+                <input type="checkbox" value="Chimpanze Trekking" id="river" name="check">
+                <label for="river">Chimpanze Trekking</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Wildlife-GameDrives" id="river" name="check">
+                <label for="river">Wildlife-GameDrives</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Boat Cruises" id="river" name="check">
+                <label for="river">Boat Cruises</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Cultural Encounters" id="river" name="check">
+                <label for="river">Cultural Encounters</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Hot-Air Ballooning" id="river" name="check">
+                <label for="river">Hot-Air Ballooning</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="White-Water Raftin" id="river" name="check">
+                <label for="river">White-Water Rafting</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Camping" id="river" name="check">
+                <label for="river">Camping</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Bird Waching" id="river" name="check">
+                <label for="river">Bird Waching</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="City Tours" id="river" name="check">
+                <label for="river">City Tours</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Rhino Trekking" id="river" name="check">
+                <label for="river">Rhino Trekking</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Golden Monkey Trekg" id="river" name="check">
+                <label for="river">Golden Monkey Trek</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Mountaineering" id="river" name="check">
+                <label for="river">Mountaineering</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Honeymoon Holiday" id="river" name="check">
+                <label for="river">Honeymoon Holiday</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Adventure Sport Tours" id="river" name="check">
+                <label for="river">Adventure Sport Tours</label></br>
+            </div>
+            <div class="group">
+                <input type="checkbox" value="Nature Walks" id="river" name="check">
+                <label for="river">Nature Walks</label></br>
+            </div>
+        </div>
+        <div class="tailorinput-box">
+            <p>Specify Other activiies if not on the list above.</p>
+            <input type="text" id="activities" placeholder="Please enter Other activities" required>
+        </div>
+        <div class="select-wrapper">
+            <div class="select-box1">
+                <h1>Select Your Budget Range</h1>
+                <select name="select-btn" id="select" class="select" required>
                          <option class="options" value="$1,000-$3,000" >$150-$300</option>
                              <option class="options" value="$3,000-$5,000">$3000-$450</option>
                              <option class="options" value="$5,000-$10,000">$450-$500</option>
@@ -150,20 +161,19 @@
                              <option class="options" value="$3,000-$5,000">$3,000-$5,000</option>
                              <option class="options" value="$5,000-$10,000">$5,000-$10,000</option>
                         </select>
-                </div>
-                <div class="select-box">
-                    <h1>Accomodation</h1>
-                    <select name="select-btn" id="Accomodation" class="select" required>
+            </div>
+
+        </div>
+        <div class="select-box">
+            <h1>Accomodation</h1>
+            <select name="select-btn" id="Accomodation" class="select" required>
                             <option class="options" value="Budget">Budget</option>
                              <option class="options" value="Midrange">Mid-range</option>
                              <option class="options" value="High/end">Luxury</option>
                         </select>
-                </div>
-            </div>
-            <textarea id="message" cols="30" rows="10" placeholder="Describe your kind of Journey"></textarea>
-            <input type="button" onclick=sendTailorMail() value="send message " class="journey-btn">
-            </div>
-        </form>
+        </div>
+        <textarea id="message" cols="30" rows="10" placeholder="Describe your kind of Journey"></textarea>
+        <input type="submit" onclick=sendTailorMail() value="send message " class="journey-btn">
 
     </section>
     <footer class="footer journey-footer">

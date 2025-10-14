@@ -71,6 +71,7 @@ function sendContactMail() {
         subject: document.getElementById('subject').value,
         message: document.getElementById('message').value
     }
+    console.log(params)
 
     emailjs.send('service_5qmrtb8', 'template_zgsfwqj', params).then(
         (response) => {
@@ -117,8 +118,22 @@ function sendTailorMail() {
         accomodation: accomodation.value
 
     }
+    console.log(params)
     emailjs.send('service_5qmrtb8', 'template_lg5ws39', params).then(
         (response) => {
+            if (response.status === 200) {
+                document.getElementById('name').value = '',
+                    document.getElementById('email').value = '',
+                    document.getElementById('message').value = '',
+                    document.getElementById('country').value = '',
+                    document.getElementById('date').value = '',
+                    document.getElementById('days').value = '',
+                    document.getElementById('people').value = '',
+                    document.getElementById('number').value = '',
+                    document.getElementById('subject').value = '',
+                    document.getElementById('activities').value = ''
+
+            }
             console.log('SUCCESS!', response.status, response.text);
         },
         (error) => {
@@ -134,6 +149,7 @@ function sendMail() {
             checkedItems.push(item.value)
         }
     })
+    console.log(checkedItems)
     const selectbtn = document.getElementById('select')
     const accomodation = document.getElementById('Accomodation')
 
@@ -153,6 +169,7 @@ function sendMail() {
         accomodation: accomodation.value
 
     }
+    console.log(params)
     emailjs.send('service_5qmrtb8', 'template_lg5ws39', params).then(
         (response) => {
 

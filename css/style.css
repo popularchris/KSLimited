@@ -494,8 +494,7 @@
         color: #F1E2B7;
     }
     
-    .journeyinput-box input,
-    .journey form textarea {
+    .journeyinput-box input {
         width: 100%;
         padding: 1.5rem;
         font-size: 1.3rem;
@@ -507,8 +506,11 @@
         border: 1px solid #2E6613;
     }
     
-    .journeyinput-box input {
-        width: 49%;
+    .journeyinput-box label {
+        display: flex;
+        font-size: 15px;
+        margin-top: 20px;
+        justify-content: flex-start;
     }
     
     .journey form textarea {
@@ -595,6 +597,8 @@
     }
     
     .contact-btn {
+        margin-top: 20px;
+        margin-left: 450px;
         padding: 15px;
         background-color: #2E6613;
         color: #F1E2B7;
@@ -1238,6 +1242,8 @@
     
     .tailorinput-box input {
         border-radius: 5px;
+        margin-left: 200px;
+        margin-bottom: 20px;
         padding: 10px;
         display: flex;
         width: 300px;
@@ -1246,6 +1252,7 @@
     }
     
     .tailorinput-box p {
+        margin-left: 200px;
         margin-bottom: 12px;
         font-size: 20px;
         display: flex;
@@ -1272,6 +1279,32 @@
         left: 10px;
         bottom: 10px;
         font-size: 40px;
+    }
+    
+    .textareadivision {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .textareawrapper {
+        margin-right: 200px;
+    }
+    
+    .contacttextareawrapper #message {
+        width: 690px;
+    }
+    
+    .contacttextareawrapper .send-btn {
+        margin-left: 450px;
+    }
+    
+    .send-btn {
+        margin-top: 20px;
+        margin-left: 380px;
+    }
+    
+    .textareawraper #message {
+        width: 690px;
     }
     
     @keyframes change {
@@ -1487,6 +1520,39 @@
         }
     }
     
+    #message {
+        width: 550px;
+        margin-left: 200px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        border-radius: 16px;
+        padding: 30px;
+        color: #b86338;
+        background-color: #F1E2B7;
+    }
+    
+    .select-wrapper {
+        margin-left: 200px;
+    }
+    
+    .select-box {
+        margin-left: 200px;
+    }
+    
+    .journey-btn {
+        margin-left: 400px;
+        margin-top: 30px;
+    }
+    
+    .wrapper {
+        margin-left: 200px;
+    }
+    
+    .textareadiv {
+        display: flex;
+        /* flex-direction: column; */
+    }
+    
     @media(max-width:1200px) {
         html {
             font-size: 55%;
@@ -1525,8 +1591,28 @@
     }
     
     @media(max-width:1024px) {
+        .textareawraper #message {
+            width: 600px;
+            margin-left: 110px;
+        }
+        .contact-btn {
+            margin-left: 340px;
+        }
         .card-container {
             grid-template-columns: repeat(2, 1fr);
+        }
+        #message input {
+            margin-left: 250px;
+        }
+        .select-wrapper,
+        .select-box,
+        .wrapper,
+        #message {
+            margin-left: 90px;
+        }
+        .tailorinput-box input,
+        .tailorinput-box p {
+            margin-left: 65px;
         }
         .sidebar {
             display: none;
@@ -1678,6 +1764,17 @@
         .menu-icon1 {
             display: flex;
         }
+        .textareawraper #message {
+            width: 600px;
+            margin-left: 75px;
+        }
+        .contact-btn {
+            margin-left: 290px;
+        }
+        .tailorinput-box input,
+        .tailorinput-box p {
+            margin-left: 40px;
+        }
         .home-content .welcome {
             line-height: 20rem;
         }
@@ -1697,6 +1794,12 @@
         }
         .services-box {
             margin-top: 20px;
+        }
+        .select-wrapper,
+        .select-box,
+        .wrapper,
+        #message {
+            margin-left: 50px;
         }
     }
     
@@ -1730,6 +1833,16 @@
         }
         .home-content h1 {
             font-size: 5rem;
+        }
+        .tailorinput-box input,
+        .tailorinput-box p {
+            margin-left: 40px;
+        }
+        .select-wrapper,
+        .select-box,
+        .wrapper,
+        #message {
+            margin-left: 30px;
         }
         .home-image img {
             width: 70vh;
@@ -1781,6 +1894,13 @@
         .contactheading,
         .projects .heading {
             font-size: 50px;
+        }
+        .textareawraper #message {
+            width: 600px;
+            margin-left: 60px;
+        }
+        .contact-btn {
+            margin-left: 270px;
         }
     }
     
@@ -1878,6 +1998,13 @@
     }
     
     @media(max-width:540px) {
+        .textareawraper #message {
+            width: 500px;
+            margin-left: 10px;
+        }
+        .contact-btn {
+            margin-left: 180px;
+        }
         .bout-content p {
             font-size: 20px;
         }
@@ -1911,6 +2038,12 @@
         .tailorinput-box {
             margin-left: 30px;
             text-align: left;
+        }
+        #message {
+            width: 480px;
+        }
+        .journey-btn {
+            margin-left: 200px;
         }
     }
     
@@ -2002,6 +2135,12 @@
             font-size: 10px;
             margin-bottom: 30px;
         }
+        .textareawraper #message {
+            width: 400px;
+        }
+        .contact-btn {
+            margin-left: 120px;
+        }
         .about-content h1 {
             font-size: 20px;
         }
@@ -2017,6 +2156,9 @@
         }
         .home-content h1 {
             margin-bottom: 50px;
+        }
+        #Accomodation {
+            margin-bottom: 20px;
         }
         .home-content .welcome {
             font-size: 35px;
@@ -2044,6 +2186,10 @@
         .send-btn {
             margin-top: 20px;
         }
+        .tailorinput-box input,
+        .tailorinput-box p {
+            margin-left: 10px;
+        }
         .logo {
             display: flex;
             justify-content: space-between;
@@ -2056,6 +2202,27 @@
         .logo-heading {
             margin-bottom: 55px;
             font-size: 20px;
+        }
+        .select-wrapper {
+            margin: 0 auto;
+        }
+        .select-box {
+            margin: 0 auto;
+        }
+        .wrapper {
+            margin: 10px auto;
+        }
+        .textareawrappper {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+        #message {
+            width: 380px;
+            margin: 0 auto;
+        }
+        .journey-btn {
+            margin-left: 120px;
         }
     }
     
@@ -2107,6 +2274,12 @@
         .logo-heading {
             margin-bottom: 55px;
             font-size: 20px;
+        }
+        .textareawraper #message {
+            width: 380px;
+        }
+        .contact-btn {
+            margin-left: 100px;
         }
     }
     
@@ -2193,11 +2366,20 @@
         .home-content.welcome {
             margin-top: 10px;
         }
+        .textareawraper #message {
+            width: 330px;
+        }
+        .contact-btn {
+            margin-left: 70px;
+        }
         .destination-plan {
             margin: 0 auto;
         }
         .arrow-down {
             margin-top: 80px;
+        }
+        #message {
+            width: 330px;
         }
         .logo {
             display: flex;
@@ -2280,6 +2462,9 @@
         #menu-icon {
             display: block;
         }
+        .contact-btn {
+            margin-left: 100px;
+        }
         .home img {
             width: 90vw;
         }
@@ -2337,11 +2522,6 @@
             font-size: 9px;
             margin-bottom: 20px;
         }
-        /* #message {
-            width: 340px;
-            margin: 0 auto;
-            margin-top: 30px;
-        } */
     }
     
     @media(max-width:350px) {
@@ -2440,6 +2620,18 @@
         .culture-heading,
         .busuwoko-heading {
             font-size: 30px;
+        }
+        #message {
+            width: 300px;
+        }
+        .textareawraper #message {
+            width: 300px;
+        }
+        .contact-btn {
+            margin-left: 70px;
+        }
+        .journey-btn {
+            margin-left: 80px;
         }
         .destination-plan {
             margin-bottom: 20px;

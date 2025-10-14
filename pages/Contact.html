@@ -56,9 +56,13 @@
                 <input type="tel" id="number" placeholder="Mobile number" required>
                 <input type="text" id="subject" placeholder=" Email subject" required>
             </div>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="your message" required></textarea>
-            <input type="button" onclick=sendContactMail() value="send message " class="contact-btn">
         </form>
+        <div class="textareadivision">
+            <div class="textareawraper">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="your message" required></textarea><br>
+                <input type="submit" onclick=sendContactMail() value="send message " class="contact-btn">
+            </div>
+        </div>
     </section>
     <footer class="footer " id="contactus-footer">
         <div class="footer-box ">
