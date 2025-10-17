@@ -2128,10 +2128,17 @@
     
     @media(max-width:430px) {
         .home-content .welcome {
-            line-height: 10rem;
+            line-height: 20rem;
         }
         body {
             width: 100vh;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
         }
         .destination-plan {
             width: 250px;
@@ -2164,7 +2171,7 @@
             margin-bottom: 20px;
         }
         .home-content .welcome {
-            font-size: 35px;
+            font-size: 80px;
         }
         .ceo img {
             width: 200px;
