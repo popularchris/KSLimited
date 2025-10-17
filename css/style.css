@@ -2130,6 +2130,9 @@
         .home-content .welcome {
             line-height: 10rem;
         }
+        body {
+            width: 100vh;
+        }
         .destination-plan {
             width: 250px;
             font-size: 10px;
@@ -2173,6 +2176,9 @@
         }
         .ceo-heading {
             font-size: 25px;
+        }
+        .expert-btn {
+            display: none;
         }
         .vision-content .spanheading,
         .mission-content .spanheading,
