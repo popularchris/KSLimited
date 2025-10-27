@@ -1553,6 +1553,18 @@
         /* flex-direction: column; */
     }
     
+    .nile-content {
+        position: relative;
+        ;
+    }
+    
+    .nile-heading {
+        position: absolute;
+        left: 0;
+        top: -70px;
+        font-size: 40px;
+    }
+    
     @media(max-width:1200px) {
         html {
             font-size: 55%;
@@ -2139,6 +2151,15 @@
             justify-content: center;
             flex-wrap: wrap;
             margin-top: 100px;
+        }
+        .nile-content {
+            position: relative;
+            ;
+        }
+        .nile-heading {
+            position: absolute;
+            left: 0;
+            top: -60px;
         }
         .destination-plan {
             bottom: 100px;
