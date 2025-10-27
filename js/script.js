@@ -15,8 +15,8 @@ ScrollReveal({
     delay: 200,
 });
 ScrollReveal().reveal('.home-content', '.ceop', { origin: 'top' });
-ScrollReveal().reveal('nile-heading', { origin: 'top' });
-ScrollReveal().reveal('nile-para', { origin: 'bottom' });
+// ScrollReveal().reveal('nile-heading', { origin: 'top' });
+// ScrollReveal().reveal('nile-para', { origin: 'bottom' });
 ScrollReveal().reveal('.destination-plan', { origin: 'bottom' });
 ScrollReveal().reveal('.content-para', { origin: 'bottom' });
 ScrollReveal().reveal('.arrow-down', { origin: 'top' });
@@ -38,7 +38,7 @@ ScrollReveal().reveal('.spanheading', { origin: 'top' });
 ScrollReveal().reveal('.contact-us', { origin: 'top' });
 ScrollReveal().reveal('.contact', { origin: 'top' });
 ScrollReveal().reveal('.heading', { origin: 'top' });
-ScrollReveal().reveal('.footer-box', { origin: 'top' });
+//ScrollReveal().reveal('.footer-box', { origin: 'top' });
 ScrollReveal().reveal('.portfolio-container', { origin: 'bottom' });
 ScrollReveal().reveal('.journey', { origin: 'top' });
 ScrollReveal().reveal('.welcome', { origin: 'top' });
