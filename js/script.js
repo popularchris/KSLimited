@@ -22,13 +22,9 @@ ScrollReveal().reveal('.content-para', { origin: 'bottom' });
 ScrollReveal().reveal('.arrow-down', { origin: 'top' });
 ScrollReveal().reveal('.spanp', { origin: 'bottom' });
 ScrollReveal().reveal('.starter-content', { origin: 'top' });
-ScrollReveal().reveal('.', { origin: 'top' });
 ScrollReveal().reveal('.about-content', { origin: 'top' });
-ScrollReveal().reveal('.lake-heading', { origin: 'bottom' });
 ScrollReveal().reveal('.wrapper', { origin: 'bottom' });
 ScrollReveal().reveal('.park-content', { origin: 'bottom' });
-ScrollReveal().reveal('.park-heading', { origin: 'bottom' })
-ScrollReveal().reveal('.culture-heading', { origin: 'bottom' });
 ScrollReveal().reveal('.culture-para', { origin: 'bottom' });
 ScrollReveal().reveal('.strong', { origin: 'top' });
 ScrollReveal().reveal('.ceo-heading', { origin: 'top' });
@@ -50,8 +46,6 @@ ScrollReveal().reveal('.service-listings', { origin: 'bottom' });
 ScrollReveal().reveal('.serviceheading', { origin: 'top' });
 ScrollReveal().reveal('.wrapper', { origin: 'top' });
 ScrollReveal().reveal('.servicep', { origin: 'top' });
-ScrollReveal().reveal('.nile-heading', { origin: 'bottom' });
-ScrollReveal().reveal('.nile-content', { origin: 'bottom' });
 
 
 function toggleMenue() {
