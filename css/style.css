@@ -935,7 +935,7 @@
     }
     
     .nile {
-        background-image: url(../images/Source-of-the-River-Nile-2.jpeg);
+        background-image: url(../images/Source-of-the-River-Nile-2.webp);
         position: relative;
         background-position: center;
         background-size: cover;
@@ -1055,7 +1055,7 @@
     
     .lake {
         position: relative;
-        background-image: url(../images/murchision\ falls.webp);
+        background-image: url(../images/murchisionfalls.webp);
         object-fit: cover;
         background-size: cover;
         animation: murchisionchange 15s infinite ease-in-out;
@@ -1366,7 +1366,7 @@
     
     @keyframes nilechange {
         10% {
-            background-image: url(../images/Source-of-the-River-Nile-2.jpeg);
+            background-image: url(../images/Source-of-the-River-Nile-2.webp);
             background-size: cover;
             background-size: cover;
             background-position: center;
@@ -1374,6 +1374,13 @@
         }
         50% {
             background-image: url(../images/source1.jpg);
+            background-size: cover;
+            background-size: cover;
+            background-position: center;
+            object-fit: cover;
+        }
+        80% {
+            background-image: url(../images/Source-of-the-River-Nile-2.webp);
             background-size: cover;
             background-size: cover;
             background-position: center;
