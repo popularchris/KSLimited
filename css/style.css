@@ -764,6 +764,7 @@
     }
     
     .starter {
+        height: 100vh;
         background-repeat: no-repeat;
         object-fit: cover;
         display: flex;
@@ -1308,6 +1309,15 @@
         width: 690px;
     }
     
+    .ceo-container img {
+        border-radius: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .ceo-container p {
+        color: #F1E2B7;
+    }
+    
     @keyframes change {
         10% {
             background-image: url(../images/ken.jpeg);
@@ -1573,210 +1583,10 @@
         font-size: 40px;
     }
     
-    @media(max-width:1200px) {
-        html {
-            font-size: 55%;
-        }
-        .expert-btn {
-            display: none;
-        }
-        .home-content h1 {
-            margin-top: 30px;
-            line-height: 5rem;
-            text-align: center;
-        }
-        .home-content h1 {
-            font-size: 40px;
-            line-height: 10rem;
-        }
-    }
-    
-    @media(max-width:1075px) {
-        .home-content h1 {
-            margin-top: 30px;
-            line-height: 5rem;
-            text-align: center;
-        }
-        .home-content h1 {
-            line-height: 8rem;
-            margin-bottom: 20px;
-        }
+    @media all and (max-width:1024px) {
         .home-content .welcome {
-            font-size: 70px;
-        }
-        .home-content.destination-wrapper {
-            display: flex;
-            background-color: red;
-        }
-    }
-    
-    @media(max-width:1024px) {
-        .textareawraper #message {
-            width: 600px;
-            margin-left: 110px;
-        }
-        .contact-btn {
-            margin-left: 340px;
-        }
-        .card-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        #message input {
-            margin-left: 250px;
-        }
-        .select-wrapper,
-        .select-box,
-        .wrapper,
-        #message {
-            margin-left: 90px;
-        }
-        .tailorinput-box input,
-        .tailorinput-box p {
-            margin-left: 65px;
-        }
-        .sidebar {
-            display: none;
-        }
-        .menu-icon,
-        .menu-icon1 {
-            display: flex;
-        }
-        .menu-icon1 img {
-            height: 40px;
-        }
-        .services-box {
-            height: 550px;
-        }
-        .projects .heading,
-        .services .heading,
-        .contactheading {
-            font-size: 50px;
-        }
-        .send-btn {
-            margin-top: 20px;
-        }
-        .home-content .welcome {
-            margin-top: 20px;
-            line-height: 13rem;
-            margin-bottom: 10px;
-        }
-    }
-    
-    @media(max-width:1000px) {
-        .home-content h1 {
-            margin-top: 30px;
-            line-height: 15rem;
-            text-align: center;
-            font-size: 40px;
-        }
-        .services-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .services-box {
-            min-height: 550px;
-        }
-        .starter-content h1 {
-            font-size: 60px;
-        }
-    }
-    
-    @media(max-width:991px) {
-        .header {
-            padding: 2rem 3%;
-        }
-        .home-content .welcome {
-            line-height: 20rem;
             font-size: 80px;
         }
-        section {
-            padding: 10rem 3%;
-        }
-        .footer {
-            padding: 2rem 3%;
-        }
-        .starter-content h1 {
-            margin-bottom: 100px;
-        }
-        .sidebar {
-            display: flex;
-            padding: 10px;
-            position: absolute;
-            left: 0;
-            right: -300px;
-            margin-top: 550px;
-            transition: 0.3s ease;
-            flex-direction: column;
-            opacity: 0;
-        }
-        .sidebar ul {
-            margin-top: 10px;
-            padding: 20px;
-        }
-        .sidebar .expert-btn {
-            margin-bottom: 10px;
-        }
-    }
-    
-    @media(max-width:917px) {
-        .home-content .welcome {
-            line-height: 20rem;
-        }
-        .starter .starter-heading {
-            margin-top: 40rem;
-        }
-    }
-    
-    @media(max-width:883px) {
-        .home-content h1 {
-            text-align: center;
-        }
-    }
-    
-    @media(max-width:892px) {
-        .home-content h1 {
-            margin-top: 30px;
-            line-height: 5rem;
-            text-align: center;
-        }
-        .home-content h1 {
-            font-size: 50px;
-            line-height: 10rem;
-        }
-    }
-    
-    @media(max-width:891px) {
-        .home-content h1 {
-            text-align: center;
-        }
-    }
-    
-    @media(max-width:856px) {
-        .menu-icon {
-            display: flex;
-            height: 40px;
-        }
-        .menu-icon1 {
-            display: none;
-        }
-        .navbar {
-            display: none;
-        }
-    }
-    
-    @media(max-width:841px) {
-        .ceo {
-            display: flex;
-            flex-direction: column;
-        }
-        .services-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .home-content .welcome {
-            font-size: 70px;
-        }
-    }
-    
-    @media(max-width:820px) {
         .sidebar {
             display: none;
         }
@@ -1784,374 +1594,8 @@
         .menu-icon1 {
             display: flex;
         }
-        .textareawraper #message {
-            width: 600px;
-            margin-left: 75px;
-        }
-        .contact-btn {
-            margin-left: 290px;
-        }
-        .tailorinput-box input,
-        .tailorinput-box p {
-            margin-left: 40px;
-        }
-        .home-content .welcome {
-            line-height: 20rem;
-        }
-        .starter-content .starter-heading {
-            margin-top: 30rem;
-        }
-        .starter {
-            background-size: contain;
-        }
-        .services .heading,
-        .projects .heading,
-        .contactheading {
-            font-size: 50px;
-        }
-        .send-btn {
-            margin-top: 20px;
-        }
-        .services-box {
-            margin-top: 20px;
-        }
-        .select-wrapper,
-        .select-box,
-        .wrapper,
-        #message {
-            margin-left: 50px;
-        }
-    }
-    
-    @media(max-width:800px) {
-        .home-content .welcome {
-            font-size: 60px;
-        }
-        .adventure-btn1 {
-            margin-top: 30px;
-        }
-    }
-    
-    @media(max-width:768px) {
-        .home {
-            flex-direction: column;
-        }
-        .sidebar {
-            display: none;
-        }
-        .menu-icon {
-            display: flex;
-        }
         .menu-icon1 {
-            display: flex;
-        }
-        .home-content .welcome {
-            line-height: 15rem;
-        }
-        .home-content h3 {
-            font-size: 2.6rem;
-        }
-        .home-content h1 {
-            font-size: 5rem;
-        }
-        .tailorinput-box input,
-        .tailorinput-box p {
-            margin-left: 40px;
-        }
-        .select-wrapper,
-        .select-box,
-        .wrapper,
-        #message {
-            margin-left: 30px;
-        }
-        .home-image img {
-            width: 70vh;
-            margin-top: 4rem;
-        }
-        .home {
-            flex-direction: column;
-        }
-        #home i {
-            color: black
-        }
-        .about img {
-            width: 70vh;
-            margin-top: 4rem;
-        }
-        .contact {
-            min-height: auto;
-        }
-        .services h2 {
-            margin-bottom: 3rem;
-        }
-        .projects h2 {
-            margin-bottom: 3rem;
-        }
-        .portfolio-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .projects {
-            padding-bottom: 1rem;
-        }
-        .about-content .content-para {
-            font-size: 20px;
-        }
-        .destination-plan {
-            display: inline-block;
-            width: 400px;
-            margin: 0 auto;
-        }
-        .starter-content .starter-heading {
-            font-size: 45px;
-        }
-        .starter-content h1 {
-            margin-top: 25rem;
-        }
-        .starter {
-            background-size: cover;
-        }
-        .services .heading,
-        .contactheading,
-        .projects .heading {
-            font-size: 50px;
-        }
-        .textareawraper #message {
-            width: 600px;
-            margin-left: 60px;
-        }
-        .contact-btn {
-            margin-left: 270px;
-        }
-    }
-    
-    @media(max-width:737px) {
-        .sidebar {
-            display: flex;
-            padding: 10px;
-            position: absolute;
-            left: 0;
-            right: -300px;
-            margin-top: 550px;
-            transition: 0.3s ease;
-            flex-direction: column;
-            opacity: 0;
-        }
-        .card-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .card {
-            width: 250px;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            align-items: center;
-            justify-content: center;
-        }
-        .sidebar ul {
-            margin-top: 10px;
-            padding: 20px;
-        }
-        .sidebar .expert-btn {
-            margin-bottom: 10px;
-        }
-        .menu-icon {
-            display: flex;
-        }
-        .menu-icon1 {
-            display: flex;
-        }
-        .group input {
-            margin-left: 30px;
-            border: 1px solid red;
-        }
-        .select-box {
-            margin-left: 30px;
-        }
-        .tailorinput-box {
-            margin-left: 30px;
-        }
-    }
-    
-    @media(max-width:656px) {
-        .home-content .welcome {
-            font-size: 50px;
-        }
-        .destination-plan {
-            display: inline-block;
-            width: 300px;
-            font-size: 15px;
-        }
-        .services .heading {
-            font-size: 50px;
-        }
-    }
-    
-    @media(max-width:617px) {
-        .portfolio-container {
-            grid-template-columns: 1fr;
-        }
-        .home-content h1 {
-            text-align: center;
-            font-size: 30px;
-        }
-        .services-box {
-            height: 500px;
-        }
-    }
-    
-    @media(max-width:590px) {
-        .home-content h1 {
-            font-size: 20px;
-        }
-        .home-content h3 {
-            font-size: 15px;
-        }
-        .home-content h1 {
-            margin-top: 30px;
-            line-height: 10rem;
-        }
-        .home-content h1 {
-            font-size: 30px;
-        }
-        .destination-plan {
-            margin: 0 auto;
-        }
-    }
-    
-    @media(max-width:540px) {
-        .textareawraper #message {
-            width: 500px;
-            margin-left: 10px;
-        }
-        .contact-btn {
-            margin-left: 180px;
-        }
-        .bout-content p {
-            font-size: 20px;
-        }
-        .home-content .welcome {
-            font-size: 45px;
-        }
-        .destination-plan {
-            width: 300px;
-            font-size: 15px;
-        }
-        .card-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .card {
-            width: 450px;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            align-items: center;
-            justify-content: center;
-        }
-        .starter {
-            background-position: center;
-            background-size: cover;
-        }
-        .starter .starter-heading {
-            margin-bottom: 40rem;
-        }
-        .services-container {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .tailorinput-box {
-            margin-left: 30px;
-            text-align: left;
-        }
-        #message {
-            width: 480px;
-        }
-        .journey-btn {
-            margin-left: 200px;
-        }
-    }
-    
-    @media(max-width:500px) {
-        .para-heading,
-        .culture-heading {
-            line-height: 7rem;
-        }
-        .culture-heading {
-            margin-left: 10px;
-        }
-        .footer {
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    
-    @media(max-width:471px) {
-        .home-content h1 {
-            line-height: 10rem;
-        }
-        .home-content .welcome {
-            font-size: 40px;
-        }
-        .home-content h1 {
-            margin-top: 20px;
-        }
-        .about-content p {
-            font-size: 10px;
-        }
-        .destinationplan {
-            margin: 0 auto;
-            margin-bottom: 70px;
-        }
-        .tailorinput-box {
-            margin-left: 30px;
-        }
-    }
-    
-    @media(max-width:450px) {
-        .logo-heading {
-            font-size: 20px;
-            margin-top: 40px;
-        }
-        .vision-content p {
-            font-size: 18px;
-        }
-        .home-content {
-            margin-top: 50px;
-        }
-        .destination-plan {
-            margin: 0 auto;
-            width: 300px;
-            font-size: 13px;
-        }
-        .arrow-down {
-            color: yellow;
-            position: absolute;
-            bottom: 10px;
-            margin: 0 auto;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .card {
-            width: 350px;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            align-items: center;
-            justify-content: center;
-        }
-        .logo-heading {
-            font-size: 10px;
-        }
-        .group label {
-            font-size: 15px;
-        }
-        .logoimg {
-            width: 60px;
-            height: 70px;
-        }
-    }
-    
-    @media(max-width:430px) {
-        .home-content .welcome {
-            line-height: 20rem;
-        }
-        body {
-            width: 100vh;
+            width: 50px;
         }
         .card-container {
             display: grid;
@@ -2160,830 +1604,265 @@
             flex-wrap: wrap;
             margin-top: 100px;
         }
-        .nile-content {
-            position: relative;
-            ;
+        .contacttextareawrapper #message {
+            margin-left: 70px;
+            width: 680px;
+        }
+        .contacttextareawrapper .send-btn {
+            margin-left: 270px;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    
+    @media all and (max-width:853px) {
+        .home-content .welcome {
+            font-size: 60px;
+        }
+        .sidebar {
+            display: none;
+        }
+        .menu-icon,
+        .menu-icon1 {
+            display: flex;
+        }
+        .menu-icon1 {
+            width: 50px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+        .contacttextareawrapper #message {
+            margin-left: 10px;
+            width: 670px;
+        }
+        .contacttextareawrapper .send-btn {
+            margin-left: 270px;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    
+    @media all and (max-width:820px) {
+        .home-content .welcome {
+            font-size: 60px;
+        }
+        .sidebar {
+            display: none;
+        }
+        .menu-icon,
+        .menu-icon1 {
+            display: flex;
+        }
+        .menu-icon1 {
+            width: 50px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+        .contacttextareawrapper #message {
+            margin-left: 10px;
+            width: 670px;
+        }
+        .contacttextareawrapper .send-btn {
+            margin-left: 270px;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    
+    @media all and (max-width:768px) {
+        .home-content .welcome {
+            font-size: 50px;
+        }
+        .sidebar {
+            display: none;
+        }
+        .menu-icon,
+        .menu-icon1 {
+            display: flex;
+        }
+        .menu-icon1 {
+            width: 50px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+        .contacttextareawrapper #message {
+            margin-left: 10px;
+            width: 600px;
+        }
+        .contacttextareawrapper .send-btn {
+            margin-left: 270px;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    
+    @media all and (max-width:540px) {
+        .home-content .welcome {
+            font-size: 40px;
+        }
+        .sidebar {
+            display: none;
+        }
+        .menu-icon,
+        .menu-icon1 {
+            display: flex;
+        }
+        .menu-icon1 {
+            width: 50px;
+        }
+        .destination-plan {
+            font-size: 10px;
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+        .contacttextareawrapper #message {
+            margin-left: 10px;
+            width: 430px;
+        }
+        .contacttextareawrapper .send-btn {
+            margin-left: 160px;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+            gap: 2rem;
+        }
+    }
+    
+    @media all and (max-width:430px) {
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 100px;
+        }
+        .contacttextareawrapper #message {
+            width: 340px;
+            margin-left: 10px;
+        }
+        .contacttextareawrapper .send-btn {
+            margin-left: 100px;
+        }
+        .home-content .welcome {
+            font-size: 30px;
+            line-height: 80px;
+        }
+        .ceoimg {
+            margin-left: 30px;
+        }
+        .sidebar {
+            display: none;
+        }
+        .menu-icon1 {
+            display: flex;
+        }
+        .menu-icon {
+            display: flex;
+        }
+        .ceop {
+            margin-left: 20px;
+        }
+        .destination-plan {
+            font-size: 10px;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            gap: 2rem;
         }
         .nile-heading {
             position: absolute;
+            top: -80px;
             left: 0;
-            top: -60px;
-        }
-        .destination-plan {
-            bottom: 100px;
-            left: 400px;
-            position: absolute;
-            width: 280px;
-            font-size: 12px;
-            padding: 40px;
-            margin-bottom: 30px;
-        }
-        .arrow-down {
-            bottom: 20px;
-            left: 400px;
-        }
-        .textareawraper #message {
-            width: 400px;
-        }
-        .contact-btn {
-            margin-left: 120px;
-        }
-        .about-content h1 {
             font-size: 20px;
-        }
-        .logo-heading {
-            margin-top: 60px;
-        }
-        .starter-content h1 {
-            font-size: 40px;
-        }
-        .about-content h3 {
-            font-size: 15px;
-            letter-spacing: 1.5rem;
-        }
-        .home-content h1 {
-            margin-bottom: 50px;
-        }
-        #Accomodation {
-            margin-bottom: 20px;
-        }
-        .home-content .welcome {
-            font-size: 80px;
-        }
-        .ceo img {
-            width: 200px;
-            height: 200px;
-            border-radius: 200px;
-        }
-        .ceo p {
-            font-size: 15px;
-        }
-        .ceo-heading {
-            font-size: 25px;
+            line-height: 30px;
         }
         .expert-btn {
             display: none;
         }
-        .vision-content .spanheading,
-        .mission-content .spanheading,
-        .services .heading,
-        .projects .heading,
-        .starter-content .starter-heading,
-        .service .serviceheading,
-        .contactheading {
-            font-size: 30px;
-        }
-        .send-btn {
-            margin-top: 20px;
-        }
-        .tailorinput-box input,
-        .tailorinput-box p {
-            margin-left: 10px;
-        }
-        .logo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logoimg {
-            width: 50px;
-            height: 50px;
+        .menu-icon {
+            width: 30px;
         }
         .logo-heading {
-            margin-bottom: 55px;
-            font-size: 20px;
-        }
-        .select-wrapper {
-            margin: 0 auto;
-        }
-        .select-box {
-            margin: 0 auto;
-        }
-        .wrapper {
-            margin: 10px auto;
-        }
-        .textareawrappper {
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
-        }
-        #message {
-            width: 380px;
-            margin: 0 auto;
-        }
-        .journey-btn {
-            margin-left: 120px;
-        }
-    }
-    
-    .about {
-        flex-direction: column-reverse;
-    }
-    
-    .about-content p {
-        font-size: 18px;
-    }
-    
-    .footer-box h1 {
-        color: var(--main-color);
-        font-size: 18px;
-    }
-    
-    .vision-content p {
-        font-size: 15px;
-    }
-    
-    .vision-content h1 {
-        font-size: 28px;
-    }
-    
-    @media(max-width:414px) {
-        .projects .heading,
-        .contactheading,
-        .service-content .serviceheading,
-        .vision-content .spanheading,
-        .services .heading {
-            font-size: 30px;
-        }
-        .park-heading,
-        .lake-heading,
-        .culture-heading,
-        .busuwoko-heading,
-        .nile-heading {
-            font-size: 50px;
-        }
-        .logo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logoimg {
-            width: 50px;
-            height: 50px;
-        }
-        .logo-heading {
-            margin-bottom: 55px;
-            font-size: 20px;
-        }
-        .textareawraper #message {
-            width: 380px;
-        }
-        .contact-btn {
-            margin-left: 100px;
-        }
-    }
-    
-    @media(max-width:400px) {
-        .destination-plan {
-            width: 250px;
-            font-size: 10px;
-        }
-        .services-box {
-            height: 520px;
-        }
-        .starter-content h1 {
-            margin-bottom: 250px;
-        }
-        .ceo img {
-            width: 250px;
-            height: 250px;
-        }
-        .adventure-btn1 a {
-            font-size: 15px;
-        }
-        .vision-content .spanheading {
-            font-size: 30px;
-        }
-        .about-content h1 {
-            font-size: 20px;
-        }
-        .content-para {
-            font-size: 15px;
-        }
-        .services .heading {
-            font-size: 30px;
-        }
-        .heading-journey {
-            text-align: left;
-        }
-        #activities {
-            justify-content: center;
-        }
-        .service-content .serviceheading {
-            font-size: 30px;
-        }
-    }
-    
-    @media(max-width:390px) {
-        .home-content .welcome {
-            font-size: 60px;
-            line-height: 140px;
-        }
-        .destination-plan {
-            bottom: 100px;
-            left: 350px;
-            position: absolute;
-            width: 280px;
-            font-size: 12px;
-            padding: 40px;
-            margin-bottom: 30px;
-        }
-        .arrow-down {
-            position: absolute;
-            bottom: 40px;
-            left: 350px;
-        }
-    }
-    
-    @media(max-width:386px) {
-        .vision-content h1 {
-            font-size: 20px;
-        }
-        .vision-content p {
-            font-size: 15px;
-        }
-        .starter-content h1 {
-            font-size: 25px;
-        }
-    }
-    
-    @media(max-width:386px) {
-        .home-content .welcome {
-            font-size: 30px;
-            line-height: 70px;
-        }
-        .destinationplan {
-            margin-bottom: 20px;
-        }
-        .contactheading {
-            font-size: 30px;
-        }
-        .projects .heading {
-            font-size: 30px;
-        }
-        .send-btn {
-            margin-top: 15px;
-        }
-    }
-    
-    @media(max-width:375px) {
-        .park-heading,
-        .lake-heading,
-        .busuwoko-heading,
-        .nile-heading,
-        .culture-heading {
-            font-size: 30px;
-        }
-        .home-content .welcome {
-            font-size: 60px;
-            line-height: 150px;
-        }
-        .textareawraper #message {
-            width: 330px;
-        }
-        .contact-btn {
-            margin-left: 70px;
-        }
-        .destination-plan {
-            bottom: 100px;
-            left: 350px;
-            position: absolute;
-            width: 280px;
-            font-size: 12px;
-            padding: 40px;
-            margin-bottom: 30px;
-        }
-        .arrow-down {
-            position: absolute;
-            bottom: 20px;
-            left: 330px;
-        }
-        #message {
-            width: 330px;
-        }
-        .logo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logoimg {
-            width: 50px;
-            height: 50px;
-        }
-        .logo-heading {
-            margin-bottom: 55px;
-            font-size: 15px;
-        }
-    }
-    
-    @media(max-width:365px) {
-        #menu-icon {
-            display: block;
-        }
-        .home img {
-            width: 90vw;
-        }
-        .about img {
-            width: 70vw;
-        }
-        .footer {
-            flex-direction: column-reverse;
-        }
-        .footer p {
-            text-align: center;
-            margin-top: 2rem;
-        }
-        .ceo-heading {
-            font-size: 20px;
-        }
-        .ceo-heading {
-            font-size: 15px;
-        }
-        .services-box h1 {
-            font-size: 20px;
-        }
-        .services-box h3 {
-            font-size: 15px;
-        }
-        .services-box a {
-            font-size: 15px;
-        }
-        .logo-heading {
-            font-size: 15px;
-        }
-        .menu-icon1 {
-            width: 20px;
-        }
-        .navbar {
-            width: 10%;
-        }
-        .home-content {
-            width: 100%;
-        }
-        .vision-content h1 {
-            font-size: 20px;
-        }
-        .vision-content p {
-            font-size: 15px;
-        }
-        .services-box {
-            height: 450px;
-        }
-        .home-content .welcome {
-            font-size: 30px;
-        }
-        .destination-plan {
-            width: 200px;
-            font-size: 9px;
-        }
-    }
-    
-    @media(max-width:360px) {
-        #menu-icon {
-            display: block;
-        }
-        .home-content .welcome {
-            font-size: 60px;
-            line-height: 150px;
-        }
-        .contact-btn {
-            margin-left: 100px;
-        }
-        .home img {
-            width: 90vw;
-        }
-        .about img {
-            width: 70vw;
-        }
-        .footer {
-            flex-direction: column-reverse;
-        }
-        .footer p {
-            text-align: center;
-            margin-top: 2rem;
-        }
-        .ceo-heading {
-            font-size: 20px;
-        }
-        .ceo-heading {
-            font-size: 15px;
-        }
-        .services-box h1 {
-            font-size: 20px;
-        }
-        .services-box h3 {
-            font-size: 15px;
-        }
-        .services-box a {
-            font-size: 15px;
-        }
-        .logo-heading {
-            font-size: 15px;
-        }
-        .menu-icon1 {
-            width: 20px;
-        }
-        .navbar {
-            width: 10%;
-        }
-        .home-content {
-            width: 100%;
-        }
-        .vision-content h1 {
-            font-size: 20px;
-        }
-        .vision-content p {
-            font-size: 15px;
-        }
-        .services-box {
-            height: 450px;
-        }
-        .destination-plan {
-            width: 200px;
-            font-size: 9px;
-            margin-bottom: 20px;
-        }
-    }
-    
-    @media(max-width:350px) {
-        .ceo img {
-            width: 100px;
-            height: 100px;
-        }
-        .ceo-heading {
-            font-size: 15px;
-        }
-        .starter-content h1 {
-            font-size: 25px;
-        }
-        .footer-box h1 {
-            font-size: 15px;
-        }
-        .footer-box i {
-            font-size: 15px;
-        }
-        .contact h2 {
-            font-size: 15px;
-        }
-        .ceo img {
-            width: 230px;
-            height: 230px;
-        }
-        .ceo-heading {
-            font-size: 25px;
-        }
-        .vision-content p {
-            font-size: 2px;
-        }
-        .vision-content .spanheading {
-            font-size: 30px;
-        }
-        .contact .heading {
-            font-size: 30px;
-        }
-        .services .heading {
-            font-size: 30px;
-        }
-        .projects .heading {
-            font-size: 25px;
-        }
-        .services-box {
-            height: 400px;
-        }
-        .adventure-btn1 {
-            width: 200px;
-        }
-        .adventure-btn1 a {
-            font-size: 10px;
-        }
-        .tailorinput-box input {
-            width: 240px;
-        }
-        .card {
-            width: 280px;
-            margin: 0 auto;
-            margin-bottom: 20px;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-    
-    @media(max-width:344px) {
-        .destination-plan {
-            margin-bottom: 20px;
-            margin: 0 auto;
-        }
-        .group label {
-            font-size: 12px;
-        }
-    }
-    
-    @media(max-width:338px) {
-        .destination-plan {
-            width: 200px;
-            font-size: 9px;
-        }
-        .footer-box {
-            width: 100%;
-        }
-    }
-    
-    @media(max-width:328px) {
-        .home-content .welcome {
-            font-size: 25px;
-        }
-    }
-    
-    @media(max-width:320px) {
-        .park-heading,
-        .lake-heading,
-        .nile-heading,
-        .culture-heading,
-        .busuwoko-heading {
-            font-size: 30px;
-        }
-        #message {
-            width: 300px;
-        }
-        .textareawraper #message {
-            width: 300px;
-        }
-        .contact-btn {
-            margin-left: 70px;
-        }
-        .journey-btn {
-            margin-left: 80px;
-        }
-        .destination-plan {
-            margin-bottom: 20px;
-        }
-        .wrapper h3 {
-            text-align: left;
-            margin-left: 30px;
-            line-height: 30px;
-        }
-        .select-box h1 {
-            line-height: 30px;
-        }
-        .logoimg {
-            width: 40px;
-            height: 40px;
-            align-items: center;
-            margin: 0 auto;
-        }
-        .logo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo-heading {
-            margin-bottom: 55px;
-        }
-    }
-    
-    @media(max-width:270px) {
-        .starter-content h1 {
-            font-size: 30px;
-            line-height: 10rem;
-        }
-        .ceo-heading {
-            font-size: 10px;
-        }
-        .heading {
-            font-size: 10px;
-        }
-        .services-box h1 {
-            font-size: 15px;
-        }
-        .services-box h3 {
-            font-size: 10px;
-        }
-        .services-box a {
-            font-size: 10px;
-        }
-        .home-content {
-            width: 100%;
-        }
-        .home-content .welcome {
-            font-size: 20px;
-        }
-        .destination-plan {
-            width: 200px;
-            font-size: 9px;
-        }
-    }
-    
-    @media(max-width:261px) {
-        .starter-content h1 {
-            padding: 10px;
-            line-height: 2rem;
-        }
-        .ceo-heading {
-            font-size: 10px;
-        }
-        .heading {
-            font-size: 10px;
-        }
-        .services-box h1 {
-            font-size: 15px;
-        }
-        .services-box h3 {
-            font-size: 10px;
-        }
-        .services-box a {
-            font-size: 15px;
-        }
-        .home-content {
-            width: 100%;
-        }
-        .destination-plan {
-            margin: 0 auto;
-            width: 200px;
-            font-size: 9px;
-        }
-        .footer-box span {
-            font-size: 12px;
-        }
-        .home-content .welcome {
-            font-size: 20px;
-        }
-        .starter-content .starter-heading {
-            font-size: 20px;
-        }
-        .service-listings {
-            line-height: 30px;
-        }
-        .contact .contactheading {
-            font-size: 20px;
-        }
-        .wrapper h3 {
-            text-align: left;
-            margin-left: 30px;
-            line-height: 30px;
-        }
-        .select-box h1 {
-            line-height: 30px;
-        }
-    }
-    
-    @media(max-width:250px) {
-        .destination-plan {
-            width: 150px;
-            font-size: 7px;
-        }
-        .services-box {
-            height: 200px;
-        }
-        .home-content .welcome {
-            margin-top: 40px;
-            line-height: 5rem;
-            font-size: 20px;
-        }
-        .services-box {
-            width: 100%;
-        }
-        .starter-content .starter-heading {
-            font-size: 15px;
-        }
-    }
-    
-    @media(max-width:228px) {
-        .home-content {
-            width: 100%;
-        }
-        .wrapper h3 {
-            line-height: 4rem;
-        }
-        .ceo img {
-            width: 100px;
-            height: 100px;
-        }
-        .vision-content .spanheading {
-            font-size: 30px;
-        }
-        .vision-content p {
-            font-size: 10px;
-        }
-        .heading {
-            font-size: 30px;
-        }
-        .services-box h1 {
-            font-size: 24px;
-        }
-        .services-box h3 {
-            font-size: 15px;
-        }
-    }
-    
-    @media(max-width:200px) {
-        .home-content {
-            width: 100%;
-        }
-        .home-content .welcome {
-            font-size: 17px;
-        }
-        .starter-heading {
-            font: 10px;
-        }
-        .adventure-btn1 {
-            width: 180px;
-        }
-        .logo-heading {
-            font-size: 10px;
-        }
-        .ceo img {
-            width: 100px;
-            height: 100px;
-        }
-        .footer-box {
-            font-size: 10px;
-        }
-        .footer-box a {
+            margin-top: 10px;
             font-size: 13px;
         }
-        .services-box a {
-            font-size: 10px;
+        .busuwoko-heading,
+        .lake-heading,
+        .park-heading,
+        .primate-heading,
+        .grandheading {
+            font-size: 20px;
         }
-        .footer-box {
-            font-size: 7px;
+    }
+    
+    @media all and (max-width:375px) {
+        .contacttextareawrapper #message {
+            width: 300px;
+            margin-left: 5px;
         }
-        .footer-box h1 {
-            font-size: 15px;
+        .contacttextareawrapper .send-btn {
+            margin-left: 100px;
         }
-        .footer-box a {
-            font-size: 15px;
-        }
-        .footer-box i {
-            font-size: 10px;
-        }
-        .ceo p {
-            font-size: 10px;
-        }
-        .services-box a {
-            font-size: 10px;
-        }
-        .btn {
-            font-size: 5px;
-            width: 80px;
-        }
-        .vision-content p {
-            font-size: 10px;
+        .home-content .welcome {
+            font-size: 25px;
         }
         .destination-plan {
-            font-size: 5px;
-            width: 130px;
-        }
-        .starter-content h1 {
-            line-height: 10rem;
-        }
-        .services-box {
-            height: 330px;
-        }
-        .services-box {
-            width: 100%;
-            padding: 10px;
-        }
-        .services-box {
-            height: 400px;
-            padding: 10px;
-        }
-        .logo-heading {
-            font-size: 12px;
-        }
-        .ceo img {
-            width: 150px;
-            height: 150px;
-        }
-        .footer-box span {
             font-size: 8px;
         }
     }
     
-    @media(max-width:150px) {
-        .home-content {
-            width: 100%;
+    @media all and (max-width:360px) {
+        .contacttextareawrapper #message {
+            width: 300px;
+            margin-left: 5px;
         }
-        .ceo img {
-            width: 100px;
-            height: 100px;
+        .contacttextareawrapper .send-btn {
+            margin-left: 100px;
         }
-        .footer-box {
-            font-size: 7px;
+        .home-content .welcome {
+            font-size: 25px;
         }
-        .footer-box a {
-            font-size: 15px;
-        }
-        .footer-box i {
-            font-size: 15px;
-        }
-        .services-box a {
-            font-size: 15px;
-        }
-        .btn {
-            font-size: 10px;
-            width: 80px;
-        }
-        .logo-heading {
-            font-size: 10px;
+        .destination-plan {
+            font-size: 8px;
         }
     }
