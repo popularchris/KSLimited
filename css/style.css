@@ -1833,6 +1833,29 @@
         .grandheading {
             font-size: 20px;
         }
+        .select-wrapper,
+        .select-box,
+        .wrapper {
+            margin-left: 10px;
+        }
+        .textareawrappper #message {
+            width: 360px;
+            margin-left: 10px;
+        }
+        .textareawrappper .journey-btn {
+            margin-left: 110px;
+        }
+        .tailorinput-box p,
+        #activities {
+            margin-left: 10px;
+        }
+        .journey #message {
+            margin-left: 10px;
+            width: 300px;
+        }
+        .journey .journey-btn {
+            margin-left: 80px;
+        }
     }
     
     @media all and (max-width:375px) {
