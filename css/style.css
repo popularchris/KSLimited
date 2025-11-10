@@ -1312,10 +1312,14 @@
     .ceo-container img {
         border-radius: 40px;
         margin-bottom: 30px;
+        margin-top: 80px;
+        width: 300px;
+        margin-left: 500px;
     }
     
     .ceo-container p {
         color: #F1E2B7;
+        font-size: 20px;
     }
     
     @keyframes change {
@@ -1653,6 +1657,9 @@
             align-items: center;
             gap: 2rem;
         }
+        .ceo-container img {
+            margin-left: 200px;
+        }
     }
     
     @media all and (max-width:820px) {
@@ -1689,6 +1696,9 @@
             align-items: center;
             gap: 2rem;
         }
+        .ceo-container img {
+            margin-left: 200px;
+        }
     }
     
     @media all and (max-width:768px) {
@@ -1724,6 +1734,9 @@
             grid-template-columns: repeat(2, 1fr);
             align-items: center;
             gap: 2rem;
+        }
+        .ceo-container img {
+            margin-left: 200px;
         }
     }
     
@@ -1785,7 +1798,7 @@
             font-size: 30px;
             line-height: 80px;
         }
-        .ceoimg {
+        .ceo-container img {
             margin-left: 30px;
         }
         .sidebar {
