@@ -1856,6 +1856,9 @@
         .journey .journey-btn {
             margin-left: 80px;
         }
+        .ceo-container p {
+            font-size: 20px;
+        }
     }
     
     @media all and (max-width:375px) {
