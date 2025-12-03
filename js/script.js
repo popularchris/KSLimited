@@ -19,7 +19,7 @@ ScrollReveal().reveal('.home-content', '.ceop', { origin: 'top' });
 // ScrollReveal().reveal('nile-para', { origin: 'bottom' });
 ScrollReveal().reveal('.destination-plan', { origin: 'bottom' });
 ScrollReveal().reveal('.content-para', { origin: 'bottom' });
-ScrollReveal().reveal('.arrow-down', { origin: 'top' });
+// ScrollReveal().reveal('.arrow-down', { origin: 'top' });
 ScrollReveal().reveal('.spanp', { origin: 'bottom' });
 ScrollReveal().reveal('.starter-content', { origin: 'top' });
 ScrollReveal().reveal('.about-content', { origin: 'top' });
